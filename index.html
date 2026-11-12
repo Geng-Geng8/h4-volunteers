@@ -987,31 +987,45 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
             <!-- School Selector -->
             <div>
-              <label for="school-select" class="block text-xs font-display font-bold uppercase tracking-wider text-slate-300 mb-2">
+              <label for="school-search-input" class="block text-xs font-display font-bold uppercase tracking-wider text-slate-300 mb-2">
                 1. Your Toronto High School
               </label>
+
+              <!-- Live Type-to-Search Input -->
+              <input
+                type="text"
+                id="school-search-input"
+                placeholder="Type to search your school..."
+                oninput="handleSchoolSearchInput()"
+                class="w-full px-4 py-3 rounded-xl bg-[#171E26] border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-[#F4B41A] transition-colors mb-2.5"
+                style="font-size: 16px;"
+                autocomplete="off"
+              />
+
+              <!-- Filtered Dropdown Selector -->
               <select
                 id="school-select"
                 onchange="handleSchoolChange()"
                 class="w-full px-4 py-3.5 rounded-xl bg-[#171E26] border border-white/20 text-white text-sm font-medium focus:outline-none focus:border-[#F4B41A]"
               >
-                <option value="St. Mother Teresa Catholic Academy">St. Mother Teresa Catholic Academy</option>
-                <option value="St. John Paul II Catholic Secondary School">St. John Paul II Catholic Secondary School</option>
-                <option value="Senator O'Connor College School">Senator O'Connor College School</option>
-                <option value="Mary Ward Catholic Secondary School">Mary Ward Catholic Secondary School</option>
-                <option value="Francis Libermann Catholic High School">Francis Libermann Catholic High School</option>
+                <option value="">Select your high school...</option>
+                <option value="Bishop Allen Academy">Bishop Allen Academy</option>
+                <option value="Brebeuf College School">Brebeuf College School</option>
                 <option value="Cardinal Carter Academy for the Arts">Cardinal Carter Academy for the Arts</option>
-                <option value="Neil McNeil High School">Neil McNeil High School</option>
-                <option value="Notre Dame High School">Notre Dame High School</option>
-                <option value="St. Patrick Catholic Secondary School">St. Patrick Catholic Secondary School</option>
                 <option value="Chaminade College School">Chaminade College School</option>
                 <option value="Dante Alighieri Academy">Dante Alighieri Academy</option>
                 <option value="Father John Redmond Catholic Secondary School">Father John Redmond Catholic Secondary School</option>
-                <option value="Bishop Allen Academy">Bishop Allen Academy</option>
-                <option value="St. Joseph's College School">St. Joseph's College School</option>
+                <option value="Francis Libermann Catholic High School">Francis Libermann Catholic High School</option>
                 <option value="Loretto Abbey Catholic Secondary School">Loretto Abbey Catholic Secondary School</option>
                 <option value="Marshall McLuhan Catholic Secondary School">Marshall McLuhan Catholic Secondary School</option>
-                <option value="Brebeuf College School">Brebeuf College School</option>
+                <option value="Mary Ward Catholic Secondary School">Mary Ward Catholic Secondary School</option>
+                <option value="Neil McNeil High School">Neil McNeil High School</option>
+                <option value="Notre Dame High School">Notre Dame High School</option>
+                <option value="Senator O'Connor College School">Senator O'Connor College School</option>
+                <option value="St. John Paul II Catholic Secondary School">St. John Paul II Catholic Secondary School</option>
+                <option value="St. Joseph's College School">St. Joseph's College School</option>
+                <option value="St. Mother Teresa Catholic Academy">St. Mother Teresa Catholic Academy</option>
+                <option value="St. Patrick Catholic Secondary School">St. Patrick Catholic Secondary School</option>
                 <option value="__custom__">Other High School (Type Name)...</option>
               </select>
 
@@ -1021,7 +1035,8 @@
                 id="custom-school-input"
                 placeholder="Type your high school name..."
                 oninput="updateGeneratedUrl()"
-                class="hidden mt-3 w-full px-4 py-3 rounded-xl bg-[#171E26] border border-[#F4B41A] text-white text-sm placeholder-slate-400 focus:outline-none"
+                class="hidden mt-2.5 w-full px-4 py-3 rounded-xl bg-[#171E26] border border-[#F4B41A] text-white text-sm placeholder-slate-400 focus:outline-none"
+                style="font-size: 16px;"
               />
             </div>
 
@@ -1050,7 +1065,7 @@
                 Pre-Filled School Sign-Up Link Ready
               </span>
               <span id="url-status-badge" class="text-[11px] text-slate-400">
-                Auto-fills school &amp; crew
+                Auto-fills your school
               </span>
             </div>
             <input
@@ -1760,31 +1775,153 @@
       showToast(`Selected: ${crewOptionValue}`);
     }
 
+    const PRESET_SCHOOLS = [
+      'Bishop Allen Academy',
+      'Brebeuf College School',
+      'Cardinal Carter Academy for the Arts',
+      'Chaminade College School',
+      'Dante Alighieri Academy',
+      'Father John Redmond Catholic Secondary School',
+      'Francis Libermann Catholic High School',
+      'Loretto Abbey Catholic Secondary School',
+      'Marshall McLuhan Catholic Secondary School',
+      'Mary Ward Catholic Secondary School',
+      'Neil McNeil High School',
+      'Notre Dame High School',
+      'Senator O\'Connor College School',
+      'St. John Paul II Catholic Secondary School',
+      'St. Joseph\'s College School',
+      'St. Mother Teresa Catholic Academy',
+      'St. Patrick Catholic Secondary School'
+    ];
+
+    /**
+     * Normalizes text for search, treating "St.", "St", and "Saint" as equivalent
+     */
+    function canonicalSchoolTokens(str) {
+      return (str || '')
+        .toLowerCase()
+        .replace(/\bst\.?\b/gi, 'saint')
+        .replace(/['’]/g, '')
+        .replace(/[^a-z0-9]/gi, ' ')
+        .split(/\s+/)
+        .filter(Boolean);
+    }
+
+    /**
+     * Rebuilds <select id="school-select"> options based on live search query
+     */
+    function renderSchoolOptions(query = '', explicitSelection = null) {
+      const select = document.getElementById('school-select');
+      const customInput = document.getElementById('custom-school-input');
+      if (!select) return;
+
+      const trimmedQuery = (query || '').trim();
+      let matchedSchools = PRESET_SCHOOLS;
+
+      if (trimmedQuery) {
+        const queryTerms = canonicalSchoolTokens(trimmedQuery);
+        matchedSchools = PRESET_SCHOOLS.filter((school) => {
+          const schoolTokens = canonicalSchoolTokens(school).join(' ');
+          return queryTerms.every((term) => schoolTokens.includes(term));
+        });
+      }
+
+      let html = '';
+
+      if (!trimmedQuery) {
+        html += '<option value="">Select your high school...</option>';
+        matchedSchools.forEach((school) => {
+          html += `<option value="${escapeHtml(school)}">${escapeHtml(school)}</option>`;
+        });
+      } else {
+        const exactPreset = matchedSchools.find(
+          (s) => s.toLowerCase() === trimmedQuery.toLowerCase()
+        );
+
+        if (matchedSchools.length > 1 && !exactPreset) {
+          html += `<option value="">Select matching school (${matchedSchools.length} found)...</option>`;
+        }
+
+        matchedSchools.forEach((school) => {
+          html += `<option value="${escapeHtml(school)}">${escapeHtml(school)}</option>`;
+        });
+
+        // If typed query is not in the preset list, let student select "Use '[Typed Name]'"
+        if (!exactPreset) {
+          html += `<option value="${escapeHtml(trimmedQuery)}">Use '${escapeHtml(trimmedQuery)}'</option>`;
+        }
+      }
+
+      html += '<option value="__custom__">Other High School (Type Name)...</option>';
+      select.innerHTML = html;
+
+      if (explicitSelection !== null) {
+        select.value = explicitSelection;
+      } else if (trimmedQuery) {
+        const exactPreset = matchedSchools.find(
+          (s) => s.toLowerCase() === trimmedQuery.toLowerCase()
+        );
+        if (exactPreset) {
+          select.value = exactPreset;
+        } else if (matchedSchools.length === 1) {
+          select.value = matchedSchools[0];
+        } else if (matchedSchools.length === 0) {
+          select.value = trimmedQuery;
+        }
+      } else {
+        select.value = '';
+      }
+
+      if (customInput) {
+        if (select.value === '__custom__') {
+          customInput.classList.remove('hidden');
+        } else {
+          customInput.classList.add('hidden');
+        }
+      }
+    }
+
+    /**
+     * Handles live search input typing
+     */
+    function handleSchoolSearchInput() {
+      const searchInput = document.getElementById('school-search-input');
+      const query = searchInput ? searchInput.value : '';
+      renderSchoolOptions(query);
+      updateGeneratedUrl();
+    }
+
     /**
      * Handles school dropdown selection (including custom school input toggle)
      */
     function handleSchoolChange() {
       const select = document.getElementById('school-select');
       const customInput = document.getElementById('custom-school-input');
+      if (!select) return;
+
       if (select.value === '__custom__') {
-        customInput.classList.remove('hidden');
-        customInput.focus();
+        if (customInput) {
+          customInput.classList.remove('hidden');
+          customInput.focus();
+        }
       } else {
-        customInput.classList.add('hidden');
+        if (customInput) customInput.classList.add('hidden');
       }
       updateGeneratedUrl();
     }
 
     /**
-     * Computes the active school name from either dropdown or custom text box
+     * Computes the active school name from dropdown, search, or custom text box
      */
     function getSelectedSchoolName() {
       const select = document.getElementById('school-select');
+      if (!select) return '';
       if (select.value === '__custom__') {
-        const typed = document.getElementById('custom-school-input').value.trim();
-        return typed || 'Toronto High School';
+        const typed = document.getElementById('custom-school-input')?.value.trim();
+        return typed || '';
       }
-      return select.value;
+      return (select.value || '').trim();
     }
 
     /**
@@ -1792,7 +1929,7 @@
      */
     function updateGeneratedUrl() {
       const schoolName = getSelectedSchoolName();
-      const crewName = document.getElementById('crew-select').value;
+      const crewName = (document.getElementById('crew-select')?.value || '').trim();
       const baseUrl = (siteConfig.formBaseUrl || '').trim();
       const schoolEntry = (siteConfig.schoolEntryId || '').trim();
       const crewEntry = (siteConfig.crewEntryId || '').trim();
@@ -1800,19 +1937,29 @@
       let finalUrl = baseUrl;
       try {
         const urlObj = new URL(baseUrl);
-        if (schoolEntry) {
+        urlObj.searchParams.delete('usp');
+        if (schoolEntry) urlObj.searchParams.delete(schoolEntry);
+        if (crewEntry) urlObj.searchParams.delete(crewEntry);
+
+        if (schoolName && schoolEntry) {
+          urlObj.searchParams.set('usp', 'pp_url');
           urlObj.searchParams.set(schoolEntry, schoolName);
         }
-        if (crewEntry) {
+        if (crewEntry && crewName) {
           urlObj.searchParams.set(crewEntry, crewName);
         }
         finalUrl = urlObj.toString();
       } catch (e) {
         // Fallback string concatenation if baseUrl is a partial URL
-        const sep = baseUrl.includes('?') ? '&' : '?';
         const params = [];
-        if (schoolEntry) params.push(`${encodeURIComponent(schoolEntry)}=${encodeURIComponent(schoolName)}`);
-        if (crewEntry) params.push(`${encodeURIComponent(crewEntry)}=${encodeURIComponent(crewName)}`);
+        if (schoolName && schoolEntry) {
+          params.push('usp=pp_url');
+          params.push(`${encodeURIComponent(schoolEntry)}=${encodeURIComponent(schoolName)}`);
+        }
+        if (crewEntry && crewName) {
+          params.push(`${encodeURIComponent(crewEntry)}=${encodeURIComponent(crewName)}`);
+        }
+        const sep = baseUrl.includes('?') ? '&' : '?';
         finalUrl = params.length ? `${baseUrl}${sep}${params.join('&')}` : baseUrl;
       }
 
@@ -2179,6 +2326,7 @@ siteConfig = {
     // Initialize Page on Load
     window.addEventListener('DOMContentLoaded', () => {
       initCustomizerAccess();
+      renderSchoolOptions();
       renderVisuals();
       updateGeneratedUrl();
     });
