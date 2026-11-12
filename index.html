@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H4 Volunteers 2026–2027 | H4 Community</title>
+  <meta name="description" content="Join H4 Community for the 2026–2027 school year. Earn Ontario high school volunteer hours, build real leadership, event, and media skills, and support youth arts programs across Toronto." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#0F1419',
+            charcoal: '#171E26',
+            offwhite: '#F8FAFC',
+            gold: {
+              DEFAULT: '#F4B41A',
+              hover: '#E0A10E',
+              light: '#FEF8E7',
+            },
+            teal: {
+              DEFAULT: '#146170',
+              dark: '#0E4955',
+              light: '#EBF5F7',
+            },
+            crimson: {
+              DEFAULT: '#B91C1C',
+              light: '#FEF2F2',
+              border: '#FCA5A5',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom typography & subtle architectural polish */
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #F8FAFC;
+      color: #0F1419;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    /* Subtle architectural grid background for dark sections */
+    .bg-grid-dark {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+
+    /* Smooth card lift */
+    .card-hover {
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(15, 20, 25, 0.08), 0 8px 10px -6px rgba(15, 20, 25, 0.04);
+    }
+
+    /* Custom scrollbar for modals */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94A3B8;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#F4B41A] selection:text-[#0F1419]">
+
+  <!-- =====================================================================
+       CONFIGURATION OBJECT (Updated automatically when downloading from Studio)
+       ===================================================================== -->
+  <script id="h4-site-config" type="application/json">
+  {
+    "formBaseUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf_H4_Volunteer_SignUp_2026_2027/viewform",
+    "schoolEntryId": "entry.1049281742",
+    "crewEntryId": "entry.1837492015",
+    "photos": {
+      "workshops": "",
+      "mentorship": "",
+      "showcases": "",
+      "media": ""
+    }
+  }
+  </script>
+
+  <!-- =====================================================================
+       1. STICKY RESPONSIVE NAVBAR
+       ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-[#0F1419]/95 backdrop-blur-md border-b border-white/10 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Brand Logo -->
+        <a href="#top" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-xl bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-lg flex items-center justify-center tracking-tight shadow-md group-hover:scale-105 transition-transform">
+            H4
+          </div>
+          <div>
+            <div class="font-display font-extrabold text-sm sm:text-base tracking-wide uppercase leading-none">
+              H4 Community
+            </div>
+            <div class="text-[11px] font-medium text-slate-400 tracking-wider uppercase mt-1">
+              Volunteers 2026–2027
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#in-action" class="hover:text-[#F4B41A] transition-colors py-2">Programs in Action</a>
+          <a href="#how-it-works" class="hover:text-[#F4B41A] transition-colors py-2">Earn Your Spot</a>
+          <a href="#crews" class="hover:text-[#F4B41A] transition-colors py-2">3 Crews</a>
+          <a href="#expectations" class="hover:text-[#F4B41A] transition-colors py-2">Expectations</a>
+        </nav>
+
+        <!-- Actions: Studio Button + Sign Up CTA -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            type="button"
+            onclick="openStudioModal()"
+            title="Customize Photos & Google Form Link"
+            class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
+          >
+            <svg class="w-3.5 h-3.5 text-[#F4B41A]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            <span>Customize</span>
+          </button>
+
+          <a
+            href="#apply"
+            class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#F4B41A] hover:bg-[#E0A10E] text-[#0F1419] font-display font-bold text-xs sm:text-sm shadow-lg shadow-[#F4B41A]/20 transition-all"
+          >
+            <span>Sign Up (30s)</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            type="button"
+            id="mobile-menu-btn"
+            aria-label="Toggle Menu"
+            onclick="toggleMobileMenu()"
+            class="md:hidden p-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#171E26] border-t border-white/10 px-4 pt-3 pb-5 space-y-2">
+      <a href="#in-action" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/5">Programs in Action</a>
+      <a href="#how-it-works" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/5">Earn Your Spot</a>
+      <a href="#crews" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/5">3 Crews</a>
+      <a href="#expectations" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/5">Expectations</a>
+      <button
+        type="button"
+        onclick="closeMobileMenu(); openStudioModal();"
+        class="w-full text-left flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-[#F4B41A] hover:bg-white/5"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+        </svg>
+        <span>Customize Photos &amp; Form Link</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       2. HIGH-IMPACT HERO SECTION + INTERACTIVE PROGRAMS IN ACTION COLLAGE
+       ===================================================================== -->
+  <section id="top" class="relative bg-[#0F1419] bg-grid-dark text-white overflow-hidden pt-10 pb-16 sm:pt-16 sm:pb-24 border-b border-white/10">
+    <!-- Subtle Ambient Glows -->
+    <div class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#146170]/25 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 right-0 w-96 h-96 rounded-full bg-[#F4B41A]/10 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- Left Column: Copy, CTAs, Metrics -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#146170]/30 border border-[#146170] text-teal-100 text-xs font-semibold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-[#F4B41A]"></span>
+            <span>Grades 9–12 • Toronto High School Placement</span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[3.25rem] leading-[1.1] tracking-tight text-white">
+            H4 Volunteers: <span class="text-[#F4B41A]">Not Your Typical Placement.</span>
+          </h1>
+
+          <p class="font-display font-bold text-lg sm:text-xl text-teal-200">
+            Need volunteer hours? Get more than a signature.
+          </p>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl">
+            Join H4 Community and help run real youth programs, dance workshops, school events, showcases, competitions, and media projects. You will not spend your placement sitting and watching.
+          </p>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <a
+              href="#apply"
+              class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-[#F4B41A] hover:bg-[#E0A10E] text-[#0F1419] font-display font-extrabold text-sm sm:text-base shadow-xl shadow-[#F4B41A]/20 transition-all"
+            >
+              <span>Launch Your School's Form</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+
+            <a
+              href="#crews"
+              class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/15 font-display font-bold text-sm sm:text-base transition-all"
+            >
+              <span>Explore the 3 Crews</span>
+            </a>
+          </div>
+
+          <!-- Key Metrics Strip -->
+          <div class="grid grid-cols-3 gap-3 sm:gap-5 pt-6 border-t border-white/10">
+            <div class="bg-white/[0.03] border border-white/10 rounded-xl p-3.5 sm:p-4">
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-[#F4B41A]">40 Hours</div>
+              <div class="text-xs sm:text-sm text-slate-300 font-medium mt-0.5">Ontario Volunteer Hours</div>
+            </div>
+            <div class="bg-white/[0.03] border border-white/10 rounded-xl p-3.5 sm:p-4">
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-white">3 Crews</div>
+              <div class="text-xs sm:text-sm text-slate-300 font-medium mt-0.5">Clear Team Lanes</div>
+            </div>
+            <div class="bg-white/[0.03] border border-white/10 rounded-xl p-3.5 sm:p-4">
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-teal-300">Flexible</div>
+              <div class="text-xs sm:text-sm text-slate-300 font-medium mt-0.5">Weekly Schedule</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Programs in Action Photo Collage -->
+        <div class="lg:col-span-6">
+          <div class="bg-[#171E26] border border-white/10 rounded-2xl p-4 sm:p-5 shadow-2xl">
+            <div class="flex items-center justify-between mb-3.5">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#F4B41A]"></span>
+                <span class="text-xs font-display font-bold uppercase tracking-wider text-slate-300">Programs in Action</span>
+              </div>
+              <span class="text-[11px] text-slate-400">Click any photo to inspect</span>
+            </div>
+
+            <!-- 2x2 Bento Collage Grid (Populated via JS so Studio updates reflect live) -->
+            <div id="hero-collage-grid" class="grid grid-cols-2 gap-3 sm:gap-3.5">
+              <!-- Rendered dynamically by renderVisuals() -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       3. FILTERABLE "H4 IN ACTION" 4-CARD SHOWCASE GALLERY
+       ===================================================================== -->
+  <section id="in-action" class="py-16 sm:py-24 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header + Customize Studio Trigger -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div>
+          <span class="inline-block text-xs font-display font-extrabold tracking-widest uppercase text-[#146170] mb-2">
+            Real Youth Impact Across Toronto
+          </span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-[#0F1419] tracking-tight">
+            H4 In Action
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg mt-2 max-w-2xl">
+            See what volunteers actually help build—from elementary school workshops and peer mentorship to multi-school showcases and student-edited media.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onclick="openStudioModal()"
+          class="self-start md:self-auto inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-[#0F1419] border border-slate-300 shadow-sm font-semibold text-xs sm:text-sm transition-all"
+        >
+          <svg class="w-4 h-4 text-[#146170]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span>Customize Photos &amp; Form Link</span>
+        </button>
+      </div>
+
+      <!-- Filter Pills -->
+      <div id="gallery-filters" class="flex flex-wrap items-center gap-2 sm:gap-2.5 mb-8">
+        <button
+          type="button"
+          data-filter="all"
+          onclick="filterGallery('all')"
+          class="filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-display font-bold bg-[#0F1419] text-white shadow-sm transition-all"
+        >
+          All Programs (4)
+        </button>
+        <button
+          type="button"
+          data-filter="workshops"
+          onclick="filterGallery('workshops')"
+          class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-display font-semibold bg-white text-slate-700 border border-slate-200 hover:border-[#146170] transition-all"
+        >
+          School Workshops
+        </button>
+        <button
+          type="button"
+          data-filter="mentorship"
+          onclick="filterGallery('mentorship')"
+          class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-display font-semibold bg-white text-slate-700 border border-slate-200 hover:border-[#146170] transition-all"
+        >
+          Youth Mentorship
+        </button>
+        <button
+          type="button"
+          data-filter="showcases"
+          onclick="filterGallery('showcases')"
+          class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-display font-semibold bg-white text-slate-700 border border-slate-200 hover:border-[#146170] transition-all"
+        >
+          Multi-School Showcases &amp; Battles
+        </button>
+        <button
+          type="button"
+          data-filter="media"
+          onclick="filterGallery('media')"
+          class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-display font-semibold bg-white text-slate-700 border border-slate-200 hover:border-[#146170] transition-all"
+        >
+          Media &amp; Production
+        </button>
+      </div>
+
+      <!-- 4-Card Showcase Grid (Populated via JS) -->
+      <div id="gallery-cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Rendered dynamically by renderVisuals() -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. "BUILD REAL SKILLS" DARK HIGHLIGHT STRIP
+       ===================================================================== -->
+  <section id="skills" class="py-14 sm:py-20 bg-[#0F1419] text-white border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="inline-block px-3 py-1 rounded-md bg-[#F4B41A]/15 text-[#F4B41A] font-display font-bold text-xs tracking-wider uppercase mb-3">
+          Career &amp; Leadership Growth
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight">
+          Build real skills that employers and post-secondary programs look for
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- Skill 1 -->
+        <div class="bg-[#171E26] border border-white/10 hover:border-[#F4B41A]/50 rounded-2xl p-5 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-[#146170]/30 text-[#F4B41A] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-base text-white mb-1.5">Communication &amp; Teamwork</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Public speaking, active listening, and collaborating inside reliable student pods.</p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="bg-[#171E26] border border-white/10 hover:border-[#F4B41A]/50 rounded-2xl p-5 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-[#146170]/30 text-[#F4B41A] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-base text-white mb-1.5">Leadership with Younger Students</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Helping Grade 7 and 8 students build confidence in welcoming school spaces.</p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="bg-[#171E26] border border-white/10 hover:border-[#F4B41A]/50 rounded-2xl p-5 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-[#146170]/30 text-[#F4B41A] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-base text-white mb-1.5">Event Planning &amp; Staging</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Running check-in tables, tournament schedules, brackets, and live event flow.</p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="bg-[#171E26] border border-white/10 hover:border-[#F4B41A]/50 rounded-2xl p-5 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-[#146170]/30 text-[#F4B41A] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-base text-white mb-1.5">Video Editing &amp; Graphic Design</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Producing CapCut recap reels, school intro videos, music cuts, and Canva slides.</p>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="bg-[#171E26] border border-white/10 hover:border-[#F4B41A]/50 rounded-2xl p-5 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-[#146170]/30 text-[#F4B41A] flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-base text-white mb-1.5">Organization &amp; Outreach</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">School announcements, contact lists, outreach drafts, and project coordination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. BOXED "EARN YOUR SPOT — HOW IT WORKS" SECTION
+       ===================================================================== -->
+  <section id="how-it-works" class="py-16 sm:py-24 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Outer Boxed Container -->
+      <div class="bg-white border-2 border-[#0F1419] rounded-2xl shadow-xl overflow-hidden">
+        <!-- Box Header Bar -->
+        <div class="bg-[#0F1419] text-white px-6 py-5 sm:px-10 sm:py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <span class="text-xs font-display font-extrabold tracking-widest uppercase text-[#F4B41A]">
+              Clear Path From Day One
+            </span>
+            <h2 class="font-display font-extrabold text-2xl sm:text-3xl tracking-tight mt-0.5">
+              Earn Your Spot — How It Works
+            </h2>
+          </div>
+          <span class="self-start sm:self-auto px-3.5 py-1.5 rounded-lg bg-white/10 text-xs font-semibold text-slate-200 border border-white/15">
+            4-Step Progression
+          </span>
+        </div>
+
+        <div class="p-6 sm:p-10 space-y-8">
+          <!-- Probation Policy Callout Banner -->
+          <div class="bg-[#FEF8E7] border-l-4 border-[#F4B41A] rounded-r-xl p-5 sm:p-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-[#F4B41A] text-[#0F1419] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-extrabold text-sm sm:text-base uppercase tracking-wide text-[#0F1419]">
+                  Probation Period Policy
+                </h3>
+                <p class="text-sm sm:text-base text-slate-800 leading-relaxed mt-1">
+                  Everyone starts on a probation period. This gives you time to learn, try different tasks, and show us what you can do. Signing up does not guarantee a specific role, regular shifts, or a set number of hours. <strong>Students who show up, reply to messages, finish assigned tasks, and support the team earn the most opportunities.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Large Step Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Step 1 -->
+            <div class="bg-[#F8FAFC] border border-slate-200 hover:border-[#146170] rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 rounded-lg bg-[#0F1419] text-[#F4B41A] font-display font-extrabold text-xs tracking-wider uppercase">
+                    Step 01
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500">30 Seconds</span>
+                </div>
+                <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419] mb-2">
+                  Sign Up
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  Fill out our quick 30-second interest form with your school, grade, and weekly availability so we can match you to a team.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-[#F8FAFC] border border-slate-200 hover:border-[#146170] rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 rounded-lg bg-[#146170] text-white font-display font-extrabold text-xs tracking-wider uppercase">
+                    Step 02
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500">Onboarding</span>
+                </div>
+                <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419] mb-2">
+                  Orientation
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  Join a short onboarding session to learn how H4 works, how to support younger students, and what is expected on shift.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-[#F8FAFC] border border-slate-200 hover:border-[#146170] rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 rounded-lg bg-[#146170] text-white font-display font-extrabold text-xs tracking-wider uppercase">
+                    Step 03
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500">First Tasks</span>
+                </div>
+                <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419] mb-2">
+                  Probation
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  Complete your first real tasks in school, online, or at an H4 event. Ask questions, stay responsive, and build reliability.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-[#F8FAFC] border border-slate-200 hover:border-[#F4B41A] rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 rounded-lg bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-xs tracking-wider uppercase">
+                    Step 04
+                  </span>
+                  <span class="text-xs font-semibold text-slate-500">Leadership Track</span>
+                </div>
+                <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419] mb-2">
+                  Level Up
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  Volunteers who consistently show up and deliver earn regular shifts, event leadership roles, and team captain spots.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. "CHOOSE YOUR CREW" INTERACTIVE MATCHER + 3 DETAILED CREW CARDS
+       ===================================================================== -->
+  <section id="crews" class="py-16 sm:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-8">
+        <span class="inline-block text-xs font-display font-extrabold tracking-widest uppercase text-[#146170] mb-2">
+          Pick Your Lane
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-[#0F1419] tracking-tight">
+          Choose Your Crew (3 Teams)
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-2">
+          Tell us which crew interests you most on the sign-up form. Your tasks will match your skills, weekly availability, and current program needs.
+        </p>
+      </div>
+
+      <!-- Interactive Crew Matcher Bar -->
+      <div class="bg-[#F8FAFC] border border-slate-200 rounded-2xl p-5 sm:p-6 mb-10">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div>
+            <div class="text-xs font-display font-extrabold uppercase tracking-wider text-[#146170]">
+              Quick Crew Matcher
+            </div>
+            <div class="font-display font-bold text-base sm:text-lg text-[#0F1419] mt-0.5">
+              Not sure where you fit? Tap what sounds most like you:
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button
+              type="button"
+              data-crew-match="dance"
+              onclick="matchCrew('dance')"
+              class="matcher-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:border-[#146170] transition-all"
+            >
+              Music, movement &amp; filming
+            </button>
+            <button
+              type="button"
+              data-crew-match="media"
+              onclick="matchCrew('media')"
+              class="matcher-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:border-[#F4B41A] transition-all"
+            >
+              Video editing, Canva &amp; audio
+            </button>
+            <button
+              type="button"
+              data-crew-match="ops"
+              onclick="matchCrew('ops')"
+              class="matcher-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:border-[#0F1419] transition-all"
+            >
+              Announcements, outreach &amp; events
+            </button>
+            <button
+              type="button"
+              id="reset-matcher-btn"
+              onclick="matchCrew('all')"
+              class="hidden px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-500 hover:text-[#0F1419] underline"
+            >
+              Show All
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Detailed Crew Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+        <!-- CREW 1: Dance & Youth Crew -->
+        <article
+          id="crew-card-dance"
+          class="crew-card card-hover bg-white border-2 border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="bg-[#146170] text-white px-6 py-4 flex items-center justify-between">
+              <span class="font-display font-extrabold text-xs tracking-wider uppercase">Crew 01</span>
+              <span class="px-2.5 py-1 rounded-md bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-[11px] tracking-wider uppercase">
+                Teach + Film
+              </span>
+            </div>
+
+            <div class="p-6 sm:p-7">
+              <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419]">
+                1. Dance &amp; Youth Crew
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                Support dance sessions, help younger students build confidence, and capture footage from the floor.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Assist with Hip Hop and Breaking workshops and practice sessions</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Lead simple warm-ups, rhythm games, and beginner moves after training</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Support student routines, group energy, and welcoming practice circles</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Film raw dance clips, practice runs, and showcase highlights on your phone</span>
+                </li>
+              </ul>
+
+              <div class="mt-6 p-3.5 rounded-xl bg-[#EBF5F7] border border-[#146170]/20 text-xs text-slate-800 leading-relaxed">
+                <strong class="text-[#146170]">Best for:</strong> Students who enjoy music, movement, filming on their phone, and working with younger students (no dance experience required).
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6">
+            <button
+              type="button"
+              onclick="selectCrewAndScroll('Dance & Youth Crew (Teach + Film)')"
+              class="w-full py-3.5 px-4 rounded-xl bg-[#0F1419] hover:bg-[#146170] text-white font-display font-bold text-sm transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Select Dance &amp; Youth Crew</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- CREW 2: Media & Design Crew -->
+        <article
+          id="crew-card-media"
+          class="crew-card card-hover bg-white border-2 border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="bg-[#0F1419] text-white px-6 py-4 flex items-center justify-between">
+              <span class="font-display font-extrabold text-xs tracking-wider uppercase text-slate-300">Crew 02</span>
+              <span class="px-2.5 py-1 rounded-md bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-[11px] tracking-wider uppercase">
+                Edit + Design
+              </span>
+            </div>
+
+            <div class="p-6 sm:p-7">
+              <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419]">
+                2. Media &amp; Design Crew
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                Turn raw footage and ideas into finished videos, audio mixes, and graphics for H4 and participating schools.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#F4B41A] mt-2 shrink-0"></span>
+                  <span>Edit short recap Reels, TikToks, and school intro videos using CapCut or similar tools</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#F4B41A] mt-2 shrink-0"></span>
+                  <span>Design event flyers, social media graphics, and presentation slides in Canva</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#F4B41A] mt-2 shrink-0"></span>
+                  <span>Cut, clean, and organize music tracks for workshops and performances</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#F4B41A] mt-2 shrink-0"></span>
+                  <span>Organize photo and video folders in Google Drive</span>
+                </li>
+              </ul>
+
+              <div class="mt-6 p-3.5 rounded-xl bg-[#FEF8E7] border border-[#F4B41A]/30 text-xs text-slate-800 leading-relaxed">
+                <strong class="text-[#0F1419]">Best for:</strong> Students who enjoy video editing, Canva, graphic design, audio mixing, or digital media.
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6">
+            <button
+              type="button"
+              onclick="selectCrewAndScroll('Media & Design Crew (Edit + Design)')"
+              class="w-full py-3.5 px-4 rounded-xl bg-[#0F1419] hover:bg-[#F4B41A] hover:text-[#0F1419] text-white font-display font-bold text-sm transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Select Media &amp; Design Crew</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- CREW 3: Outreach, Ops & Events Crew -->
+        <article
+          id="crew-card-ops"
+          class="crew-card card-hover bg-white border-2 border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="bg-[#146170] text-white px-6 py-4 flex items-center justify-between">
+              <span class="font-display font-extrabold text-xs tracking-wider uppercase">Crew 03</span>
+              <span class="px-2.5 py-1 rounded-md bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-[11px] tracking-wider uppercase">
+                Promote + Organize + Host
+              </span>
+            </div>
+
+            <div class="p-6 sm:p-7">
+              <h3 class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419]">
+                3. Outreach, Ops &amp; Events Crew
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                Spread the word in schools, keep projects organized behind the scenes, and run smooth, high-energy events.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Share school sign-up links, help write morning PA announcements, and build student turnout</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Draft outreach messages, update contact lists, and help connect H4 with school contacts</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Set up event signage, tables, supplies, and equipment at showcases and competitions</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Run team check-in, registration, schedules, brackets, and guest directions on event days</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#146170] mt-2 shrink-0"></span>
+                  <span>Keep event flow, crowd energy, and cleanup moving on time</span>
+                </li>
+              </ul>
+
+              <div class="mt-6 p-3.5 rounded-xl bg-[#EBF5F7] border border-[#146170]/20 text-xs text-slate-800 leading-relaxed">
+                <strong class="text-[#146170]">Best for:</strong> Students who are dependable, friendly, organized, and comfortable talking to people or running logistics.
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6">
+            <button
+              type="button"
+              onclick="selectCrewAndScroll('Outreach, Ops & Events Crew (Promote + Organize + Host)')"
+              class="w-full py-3.5 px-4 rounded-xl bg-[#0F1419] hover:bg-[#146170] text-white font-display font-bold text-sm transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Select Outreach, Ops &amp; Events</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- How the 3 Teams Work Together Strip -->
+      <div class="mt-10 bg-[#0F1419] text-white rounded-2xl p-6 sm:p-8 border border-white/10">
+        <div class="text-xs font-display font-extrabold uppercase tracking-widest text-[#F4B41A] mb-3">
+          How the 3 Teams Work Together
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+            <div class="font-display font-bold text-sm text-[#F4B41A]">1. Outreach, Ops &amp; Events</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1">Spreads the link, runs announcements, and hosts the event stage.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+            <div class="font-display font-bold text-sm text-teal-300">2. Dance &amp; Youth Crew</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1">Teaches workshops, supports routines, and films raw clips on the floor.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+            <div class="font-display font-bold text-sm text-[#F4B41A]">3. Media &amp; Design Crew</div>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1">Edits recap &amp; intro videos, cuts music tracks, and designs graphics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. TWO-COLUMN "WHAT YOU GET" & "WHAT WE NEED" + CRIMSON ALERT CALLOUT
+       ===================================================================== -->
+  <section id="expectations" class="py-16 sm:py-24 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <!-- Two-Column Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+        <!-- Left Card: What You Get -->
+        <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#146170] text-white px-6 py-4">
+            <h2 class="font-display font-extrabold text-lg sm:text-xl tracking-tight">
+              What You Get
+            </h2>
+          </div>
+          <div class="p-6 sm:p-8">
+            <ul class="space-y-4 text-sm sm:text-base text-slate-700">
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-[#EBF5F7] text-[#146170] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Signed Ontario high school volunteer hours for completed work</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-[#EBF5F7] text-[#146170] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Real leadership, event, and media projects for your resume or portfolio</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-[#EBF5F7] text-[#146170] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Hands-on mentorship and training from H4 artists and coordinators</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-[#EBF5F7] text-[#146170] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Strong volunteers may be considered for references, co-op placements, honorariums, or paid work when available <em class="text-slate-500">(not guaranteed)</em></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Card: What We Need From You -->
+        <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+          <div class="bg-[#0F1419] text-white px-6 py-4">
+            <h2 class="font-display font-extrabold text-lg sm:text-xl tracking-tight">
+              What We Need From You
+            </h2>
+          </div>
+          <div class="p-6 sm:p-8">
+            <ul class="space-y-4 text-sm sm:text-base text-slate-700">
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-[#F4B41A] mt-2.5 shrink-0"></span>
+                <span><strong class="text-[#0F1419]">Show up:</strong> Be on time and ready for shifts you accept.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-[#F4B41A] mt-2.5 shrink-0"></span>
+                <span><strong class="text-[#0F1419]">Reply:</strong> Answer messages and report absences early.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-[#F4B41A] mt-2.5 shrink-0"></span>
+                <span><strong class="text-[#0F1419]">Try &amp; finish:</strong> Ask questions and complete tasks you accept.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-[#F4B41A] mt-2.5 shrink-0"></span>
+                <span><strong class="text-[#0F1419]">Be respectful:</strong> Treat students, staff, families, and teammates well.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-[#F4B41A] mt-2.5 shrink-0"></span>
+                <span><strong class="text-[#0F1419]">Follow the rules:</strong> Listen to leaders and protect student privacy.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crimson-Bordered "Keeping Your Placement" Alert Callout Box -->
+      <div class="bg-[#FEF2F2] border-2 border-[#B91C1C] rounded-2xl p-6 sm:p-8 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-[#B91C1C] text-white flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display font-extrabold text-lg sm:text-xl tracking-wide uppercase text-[#B91C1C]">
+              KEEPING YOUR PLACEMENT
+            </h3>
+            <p class="text-sm sm:text-base text-slate-900 leading-relaxed mt-2">
+              Your placement may be paused or given to another student if you keep missing shifts, stop replying, do not finish tasks, act disrespectfully, or create a safety problem. We will usually give feedback and a chance to improve. Serious problems may end the placement right away.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. BOTTOM "LAUNCH YOUR SCHOOL'S SIGN-UP FORM" CARD
+       ===================================================================== -->
+  <section id="apply" class="py-16 sm:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-[#0F1419] bg-grid-dark text-white rounded-3xl border border-white/15 shadow-2xl overflow-hidden">
+        <!-- Top Accent Bar -->
+        <div class="h-2 bg-gradient-to-r from-[#146170] via-[#F4B41A] to-[#146170]"></div>
+
+        <div class="p-6 sm:p-10 lg:p-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F4B41A]/15 text-[#F4B41A] text-xs font-display font-bold uppercase tracking-wider mb-4">
+            <span>Grades 9–12 • Beginners Welcome • 30-Second Sign-Up</span>
+          </div>
+
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white tracking-tight">
+            Launch Your School's Sign-Up Form
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-2 max-w-2xl">
+            Select your Toronto high school and preferred crew below. Your school name will auto-fill on our Google Form—or copy your school's pre-filled link to share with classmates.
+          </p>
+
+          <!-- Form Launcher Controls -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+            <!-- School Selector -->
+            <div>
+              <label for="school-select" class="block text-xs font-display font-bold uppercase tracking-wider text-slate-300 mb-2">
+                1. Your Toronto High School
+              </label>
+              <select
+                id="school-select"
+                onchange="handleSchoolChange()"
+                class="w-full px-4 py-3.5 rounded-xl bg-[#171E26] border border-white/20 text-white text-sm font-medium focus:outline-none focus:border-[#F4B41A]"
+              >
+                <option value="St. Mother Teresa Catholic Academy">St. Mother Teresa Catholic Academy</option>
+                <option value="St. John Paul II Catholic Secondary School">St. John Paul II Catholic Secondary School</option>
+                <option value="Senator O'Connor College School">Senator O'Connor College School</option>
+                <option value="Mary Ward Catholic Secondary School">Mary Ward Catholic Secondary School</option>
+                <option value="Francis Libermann Catholic High School">Francis Libermann Catholic High School</option>
+                <option value="Cardinal Carter Academy for the Arts">Cardinal Carter Academy for the Arts</option>
+                <option value="Neil McNeil High School">Neil McNeil High School</option>
+                <option value="Notre Dame High School">Notre Dame High School</option>
+                <option value="St. Patrick Catholic Secondary School">St. Patrick Catholic Secondary School</option>
+                <option value="Chaminade College School">Chaminade College School</option>
+                <option value="Dante Alighieri Academy">Dante Alighieri Academy</option>
+                <option value="Father John Redmond Catholic Secondary School">Father John Redmond Catholic Secondary School</option>
+                <option value="Bishop Allen Academy">Bishop Allen Academy</option>
+                <option value="St. Joseph's College School">St. Joseph's College School</option>
+                <option value="Loretto Abbey Catholic Secondary School">Loretto Abbey Catholic Secondary School</option>
+                <option value="Marshall McLuhan Catholic Secondary School">Marshall McLuhan Catholic Secondary School</option>
+                <option value="Brebeuf College School">Brebeuf College School</option>
+                <option value="__custom__">Other High School (Type Name)...</option>
+              </select>
+
+              <!-- Custom School Input (Shown when "Other High School" is selected) -->
+              <input
+                type="text"
+                id="custom-school-input"
+                placeholder="Type your high school name..."
+                oninput="updateGeneratedUrl()"
+                class="hidden mt-3 w-full px-4 py-3 rounded-xl bg-[#171E26] border border-[#F4B41A] text-white text-sm placeholder-slate-400 focus:outline-none"
+              />
+            </div>
+
+            <!-- Crew Selector -->
+            <div>
+              <label for="crew-select" class="block text-xs font-display font-bold uppercase tracking-wider text-slate-300 mb-2">
+                2. Preferred Crew
+              </label>
+              <select
+                id="crew-select"
+                onchange="updateGeneratedUrl()"
+                class="w-full px-4 py-3.5 rounded-xl bg-[#171E26] border border-white/20 text-white text-sm font-medium focus:outline-none focus:border-[#F4B41A]"
+              >
+                <option value="Dance & Youth Crew (Teach + Film)">1. Dance &amp; Youth Crew (Teach + Film)</option>
+                <option value="Media & Design Crew (Edit + Design)">2. Media &amp; Design Crew (Edit + Design)</option>
+                <option value="Outreach, Ops & Events Crew (Promote + Organize + Host)">3. Outreach, Ops &amp; Events Crew (Promote + Organize + Host)</option>
+                <option value="Open to Any Crew">Open to Any Crew / Still Deciding</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Live Pre-Filled URL Readout -->
+          <div class="mt-6 bg-[#171E26] border border-white/10 rounded-xl p-4">
+            <div class="flex items-center justify-between gap-2 mb-1.5">
+              <span class="text-[11px] font-display font-bold uppercase tracking-wider text-teal-300">
+                Pre-Filled School Sign-Up Link Ready
+              </span>
+              <span id="url-status-badge" class="text-[11px] text-slate-400">
+                Auto-fills school &amp; crew
+              </span>
+            </div>
+            <input
+              type="text"
+              id="generated-form-url"
+              readonly
+              class="w-full bg-transparent text-xs text-slate-300 font-mono focus:outline-none select-all truncate"
+            />
+          </div>
+
+          <!-- Launch & Copy Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mt-6">
+            <a
+              id="launch-form-btn"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="handleLaunchClick(event)"
+              class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-[#F4B41A] hover:bg-[#E0A10E] text-[#0F1419] font-display font-extrabold text-sm sm:text-base shadow-lg shadow-[#F4B41A]/20 transition-all"
+            >
+              <span>Open Pre-Filled Sign-Up Form</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+
+            <button
+              type="button"
+              onclick="copyShareableLink()"
+              class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/15 font-display font-bold text-sm sm:text-base transition-all"
+            >
+              <svg class="w-5 h-5 text-[#F4B41A]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span>Copy Shareable Link</span>
+            </button>
+          </div>
+
+          <p class="text-xs text-slate-400 mt-4">
+            An H4 coordinator will text or DM you within 48 hours of submitting the form to place you in your crew chat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       CONTACT FOOTER
+       ===================================================================== -->
+  <footer class="bg-[#0F1419] text-slate-400 border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-base flex items-center justify-center">
+            H4
+          </div>
+          <div>
+            <div class="font-display font-bold text-white text-sm">
+              H4 Community — How Hip Hop Helps
+            </div>
+            <div class="text-xs text-slate-400 mt-0.5">
+              2026–2027 High School Volunteer Program • Toronto, ON
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-5 text-xs sm:text-sm font-medium">
+          <a href="mailto:glen@h4ml.com" class="hover:text-[#F4B41A] transition-colors">glen@h4ml.com</a>
+          <a href="https://instagram.com/howhiphophelps" target="_blank" rel="noopener noreferrer" class="hover:text-[#F4B41A] transition-colors">@howhiphophelps</a>
+          <a href="https://howhiphophelps.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#F4B41A] transition-colors">howhiphophelps.org</a>
+          <button type="button" onclick="openStudioModal()" class="text-slate-500 hover:text-white underline transition-colors">
+            Admin Studio
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       LIGHTBOX MODAL (For Inspecting Gallery & Collage Items)
+       ===================================================================== -->
+  <div
+    id="lightbox-modal"
+    class="fixed inset-0 z-50 hidden bg-[#0F1419]/90 backdrop-blur-sm flex items-center justify-center p-4"
+    onclick="if(event.target === this) closeLightbox()"
+  >
+    <div class="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl border border-slate-200 animate-fadeIn">
+      <!-- Top Controls -->
+      <div class="bg-[#0F1419] text-white px-5 py-3.5 flex items-center justify-between">
+        <span id="lightbox-badge" class="px-2.5 py-1 rounded-md bg-[#F4B41A] text-[#0F1419] font-display font-extrabold text-xs uppercase tracking-wider">
+          Program
+        </span>
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            onclick="stepLightbox(-1)"
+            aria-label="Previous"
+            class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            onclick="stepLightbox(1)"
+            aria-label="Next"
+            class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            onclick="closeLightbox()"
+            aria-label="Close"
+            class="p-2 rounded-lg bg-white/10 hover:bg-[#B91C1C] text-white transition-colors ml-1"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Visual Container -->
+      <div id="lightbox-visual" class="w-full aspect-[16/9] bg-[#171E26] overflow-hidden relative">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Details -->
+      <div class="p-6 sm:p-7">
+        <h3 id="lightbox-title" class="font-display font-extrabold text-xl sm:text-2xl text-[#0F1419]"></h3>
+        <p id="lightbox-desc" class="text-slate-600 text-sm sm:text-base leading-relaxed mt-2"></p>
+        <div class="mt-4 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+          <div class="text-xs font-semibold text-[#146170]" id="lightbox-crew"></div>
+          <a
+            href="#apply"
+            onclick="closeLightbox()"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0F1419] hover:bg-[#146170] text-white font-display font-bold text-xs transition-colors"
+          >
+            <span>Join This Crew</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       CUSTOMIZE PHOTOS & FORM LINK STUDIO MODAL
+       ===================================================================== -->
+  <div
+    id="studio-modal"
+    class="fixed inset-0 z-50 hidden bg-[#0F1419]/90 backdrop-blur-sm flex items-center justify-center p-4"
+    onclick="if(event.target === this) closeStudioModal()"
+  >
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl border border-slate-200">
+      <!-- Studio Header -->
+      <div class="bg-[#0F1419] text-white px-6 py-4 flex items-center justify-between shrink-0">
+        <div>
+          <span class="text-[11px] font-display font-extrabold uppercase tracking-wider text-[#F4B41A]">
+            Site Customizer
+          </span>
+          <h3 class="font-display font-extrabold text-lg sm:text-xl">
+            Customize Photos &amp; Google Form Link
+          </h3>
+        </div>
+        <button
+          type="button"
+          onclick="closeStudioModal()"
+          aria-label="Close Studio"
+          class="p-2 rounded-lg bg-white/10 hover:bg-[#B91C1C] text-white transition-colors"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Studio Body -->
+      <div class="p-6 overflow-y-auto space-y-6">
+        <!-- Section A: Google Form Configuration -->
+        <div class="bg-[#F8FAFC] border border-slate-200 rounded-xl p-5 space-y-4">
+          <div>
+            <h4 class="font-display font-extrabold text-base text-[#0F1419]">
+              1. Google Form Pre-Filled Link Settings
+            </h4>
+            <p class="text-xs text-slate-600 mt-0.5">
+              Paste your Google Form URL and the <code class="bg-slate-200 px-1 rounded">entry.XXXX</code> parameter from "Get pre-filled link" so selecting a school auto-fills the form.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-3.5">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Google Form Base URL</label>
+              <input
+                type="url"
+                id="studio-form-url"
+                placeholder="https://docs.google.com/forms/d/e/.../viewform"
+                class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-xs sm:text-sm font-mono focus:outline-none focus:border-[#146170]"
+              />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">School Question Entry ID</label>
+                <input
+                  type="text"
+                  id="studio-school-entry"
+                  placeholder="entry.1049281742"
+                  class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-xs sm:text-sm font-mono focus:outline-none focus:border-[#146170]"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Crew Question Entry ID (Optional)</label>
+                <input
+                  type="text"
+                  id="studio-crew-entry"
+                  placeholder="entry.1837492015"
+                  class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-xs sm:text-sm font-mono focus:outline-none focus:border-[#146170]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section B: 4 Program Photos -->
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-display font-extrabold text-base text-[#0F1419]">
+              2. Program Action Photos (Hero Collage &amp; Gallery)
+            </h4>
+            <p class="text-xs text-slate-600 mt-0.5">
+              Upload local photos to preview live right now, or paste hosted image URLs (recommended for downloading a portable <code class="bg-slate-200 px-1 rounded">index.html</code>). Leave blank to keep the custom illustrated artwork.
+            </p>
+          </div>
+
+          <div id="studio-photo-inputs" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Populated dynamically by buildStudioInputs() -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Studio Footer -->
+      <div class="bg-slate-50 border-t border-slate-200 px-6 py-4 flex flex-wrap items-center justify-between gap-3 shrink-0">
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            id="studio-reset-btn"
+            onclick="handleStudioReset()"
+            class="px-3.5 py-2 rounded-lg text-xs font-semibold text-[#B91C1C] hover:bg-[#FEF2F2] border border-transparent hover:border-[#FCA5A5] transition-colors"
+          >
+            Reset Defaults
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5">
+          <button
+            type="button"
+            onclick="applyStudioChanges()"
+            class="px-4 py-2.5 rounded-xl bg-[#146170] hover:bg-[#0E4955] text-white font-display font-bold text-xs sm:text-sm transition-colors"
+          >
+            Save &amp; Preview Live
+          </button>
+          <button
+            type="button"
+            onclick="downloadStandaloneHtml()"
+            class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#F4B41A] hover:bg-[#E0A10E] text-[#0F1419] font-display font-extrabold text-xs sm:text-sm shadow-sm transition-colors"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>Download Updated index.html</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       NON-BLOCKING TOAST NOTIFICATION
+       ===================================================================== -->
+  <div
+    id="toast-banner"
+    class="fixed bottom-5 right-5 z-50 hidden max-w-sm bg-[#0F1419] text-white border border-white/15 rounded-xl px-4 py-3.5 shadow-2xl flex items-center gap-3"
+  >
+    <span class="w-2.5 h-2.5 rounded-full bg-[#F4B41A] shrink-0"></span>
+    <span id="toast-message" class="text-xs sm:text-sm font-medium"></span>
+  </div>
+
+  <!-- =====================================================================
+       APPLICATION JAVASCRIPT
+       ===================================================================== -->
+  <script>
+    /**
+     * Program Showcase Data & Custom Multi-Layered Vector Illustrations
+     * Used across the Hero Bento Collage, the 4-Card Filterable Gallery, and the Lightbox.
+     */
+    const PROGRAM_ITEMS = [
+      {
+        id: 'workshops',
+        category: 'workshops',
+        badge: 'School Workshops',
+        title: 'In-School Dance & Movement Workshops',
+        shortTitle: 'School Workshops',
+        description:
+          'High school Dance & Youth Crew mentors team up with professional artists in school gyms to lead rhythm warm-ups, foundational grooves, and inclusive group movement.',
+        crewLabel: 'Led by: Dance & Youth Crew (Teach + Film)',
+        svgArt: `
+          <svg viewBox="0 0 640 400" class="w-full h-full object-cover" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bg-ws" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0F1419"/>
+                <stop offset="100%" stop-color="#146170"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#bg-ws)"/>
+            <!-- Gym floor perspective lines -->
+            <ellipse cx="320" cy="315" rx="250" ry="52" fill="none" stroke="#F4B41A" stroke-opacity="0.35" stroke-width="3"/>
+            <ellipse cx="320" cy="315" rx="165" ry="32" fill="#F4B41A" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"/>
+            <!-- Gym banners -->
+            <polygon points="80,0 130,0 130,75 105,92 80,75" fill="#F4B41A" fill-opacity="0.85"/>
+            <polygon points="150,0 200,0 200,75 175,92 150,75" fill="#FFFFFF" fill-opacity="0.15"/>
+            <polygon points="440,0 490,0 490,75 465,92 440,75" fill="#FFFFFF" fill-opacity="0.15"/>
+            <polygon points="510,0 560,0 560,75 535,92 510,75" fill="#F4B41A" fill-opacity="0.85"/>
+            <!-- Stylized dancers in movement circle -->
+            <g transform="translate(320, 235)">
+              <!-- Center mentor freeze silhouette -->
+              <circle cx="0" cy="-62" r="16" fill="#F4B41A"/>
+              <path d="M-24,-34 L24,-34 L34,12 L10,12 L0,-10 L-14,24 L-34,18 Z" fill="#F4B41A"/>
+              <!-- Left student clapping/grooving -->
+              <circle cx="-135" cy="-42" r="14" fill="#FFFFFF"/>
+              <path d="M-155,-18 L-115,-18 L-110,48 L-160,48 Z" fill="#E2E8F0"/>
+              <!-- Right student clapping/grooving -->
+              <circle cx="135" cy="-42" r="14" fill="#FFFFFF"/>
+              <path d="M115,-18 L155,-18 L160,48 L110,48 Z" fill="#E2E8F0"/>
+            </g>
+            <!-- Soundwave bars -->
+            <g fill="#F4B41A" fill-opacity="0.65">
+              <rect x="268" y="64" width="6" height="24" rx="3"/>
+              <rect x="282" y="50" width="6" height="52" rx="3"/>
+              <rect x="296" y="58" width="6" height="36" rx="3"/>
+              <rect x="310" y="42" width="6" height="68" rx="3"/>
+              <rect x="324" y="54" width="6" height="44" rx="3"/>
+              <rect x="338" y="46" width="6" height="60" rx="3"/>
+              <rect x="352" y="62" width="6" height="28" rx="3"/>
+            </g>
+          </svg>
+        `
+      },
+      {
+        id: 'mentorship',
+        category: 'mentorship',
+        badge: 'Youth Mentorship',
+        title: 'Peer Leadership Pods & Confidence Building',
+        shortTitle: 'Youth Mentorship',
+        description:
+          'High school volunteers never facilitate alone. Upper-year captains and Grade 9–10 apprentices work together in supportive teams to coach routines and encourage younger students.',
+        crewLabel: 'Led by: Dance & Youth Crew + Team Captains',
+        svgArt: `
+          <svg viewBox="0 0 640 400" class="w-full h-full object-cover" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bg-mt" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#146170"/>
+                <stop offset="100%" stop-color="#0F1419"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#bg-mt)"/>
+            <!-- Connecting mentorship rings -->
+            <circle cx="240" cy="200" r="115" fill="none" stroke="#F4B41A" stroke-width="2.5" stroke-dasharray="8 8"/>
+            <circle cx="400" cy="200" r="115" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2.5"/>
+            <!-- Mentor figure (Left, taller) -->
+            <circle cx="240" cy="135" r="22" fill="#F4B41A"/>
+            <path d="M202,172 C202,164 278,164 278,172 L288,285 L192,285 Z" fill="#F4B41A"/>
+            <!-- Younger student figure (Right) -->
+            <circle cx="400" cy="155" r="19" fill="#FFFFFF"/>
+            <path d="M368,188 C368,181 432,181 432,188 L440,285 L360,285 Z" fill="#E2E8F0"/>
+            <!-- High-five / connection spark -->
+            <circle cx="320" cy="168" r="26" fill="#F4B41A" fill-opacity="0.2"/>
+            <path d="M320,146 L325,162 L342,168 L325,174 L320,190 L315,174 L298,168 L315,162 Z" fill="#F4B41A"/>
+            <!-- Bottom badge bar -->
+            <rect x="170" y="318" width="300" height="34" rx="17" fill="#0F1419" fill-opacity="0.7" stroke="#F4B41A" stroke-opacity="0.5"/>
+            <text x="320" y="340" text-anchor="middle" fill="#F4B41A" font-family="sans-serif" font-weight="700" font-size="13" letter-spacing="1.5">OBSERVE → ASSIST → LEAD</text>
+          </svg>
+        `
+      },
+      {
+        id: 'showcases',
+        category: 'showcases',
+        badge: 'Showcases & Battles',
+        title: 'Multi-School Showcases & Tournaments',
+        shortTitle: 'Showcases & Battles',
+        description:
+          'Partner schools come together for regional showcases and competitive dance tournaments. Outreach, Ops & Events Crew runs registration, brackets, staging, and crowd energy.',
+        crewLabel: 'Led by: Outreach, Ops & Events Crew',
+        svgArt: `
+          <svg viewBox="0 0 640 400" class="w-full h-full object-cover" xmlns="http://www.w3.org/2000/svg">
+            <rect width="640" height="400" fill="#0F1419"/>
+            <!-- Stage Spotlights -->
+            <polygon points="160,0 260,330 60,330" fill="#F4B41A" fill-opacity="0.14"/>
+            <polygon points="480,0 580,330 380,330" fill="#146170" fill-opacity="0.32"/>
+            <polygon points="320,0 430,330 210,330" fill="#FFFFFF" fill-opacity="0.08"/>
+            <!-- Stage Floor -->
+            <rect x="40" y="310" width="560" height="50" rx="12" fill="#171E26" stroke="#F4B41A" stroke-width="2"/>
+            <!-- Tournament Bracket Graphic -->
+            <g stroke="#F4B41A" stroke-width="3" fill="none">
+              <path d="M120,95 L180,95 L180,145 L120,145"/>
+              <path d="M180,120 L240,120"/>
+              <path d="M520,95 L460,95 L460,145 L520,145"/>
+              <path d="M460,120 L400,120"/>
+            </g>
+            <!-- Trophy / Finale Center Emblem -->
+            <circle cx="320" cy="120" r="36" fill="#146170" stroke="#F4B41A" stroke-width="3"/>
+            <text x="320" y="126" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="16">H4</text>
+            <!-- Crowd Silhouettes -->
+            <g fill="#146170">
+              <circle cx="130" cy="275" r="14"/><rect x="112" y="292" width="36" height="35" rx="8"/>
+              <circle cx="205" cy="270" r="15"/><rect x="186" y="288" width="38" height="39" rx="8"/>
+              <circle cx="435" cy="270" r="15"/><rect x="416" y="288" width="38" height="39" rx="8"/>
+              <circle cx="510" cy="275" r="14"/><rect x="492" y="292" width="36" height="35" rx="8"/>
+            </g>
+            <circle cx="320" cy="255" r="18" fill="#F4B41A"/>
+            <rect x="296" y="278" width="48" height="48" rx="10" fill="#F4B41A"/>
+          </svg>
+        `
+      },
+      {
+        id: 'media',
+        category: 'media',
+        badge: 'Media & Production',
+        title: 'Intro Videos, Audio Mixes & Event Graphics',
+        shortTitle: 'Media & Production',
+        description:
+          'Dance volunteers capture raw clips on their phones, and Media & Design Crew edits them in CapCut, designs stage graphics in Canva, and cuts 3-minute crew music tracks.',
+        crewLabel: 'Led by: Media & Design Crew (Edit + Design)',
+        svgArt: `
+          <svg viewBox="0 0 640 400" class="w-full h-full object-cover" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bg-md" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#171E26"/>
+                <stop offset="100%" stop-color="#0F1419"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#bg-md)"/>
+            <!-- Video Editor Frame -->
+            <rect x="90" y="48" width="460" height="215" rx="16" fill="#0F1419" stroke="#146170" stroke-width="3"/>
+            <rect x="112" y="68" width="275" height="175" rx="10" fill="#146170" fill-opacity="0.35"/>
+            <!-- Play Button -->
+            <circle cx="250" cy="155" r="30" fill="#F4B41A"/>
+            <polygon points="242,141 266,155 242,169" fill="#0F1419"/>
+            <!-- Canva / Design Panel -->
+            <rect x="404" y="68" width="124" height="80" rx="10" fill="#F4B41A" fill-opacity="0.18" stroke="#F4B41A" stroke-width="1.5"/>
+            <rect x="418" y="84" width="65" height="10" rx="5" fill="#F4B41A"/>
+            <rect x="418" y="102" width="94" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.5"/>
+            <rect x="418" y="118" width="76" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.3"/>
+            <!-- Audio Track Panel -->
+            <rect x="404" y="160" width="124" height="83" rx="10" fill="#FFFFFF" fill-opacity="0.06"/>
+            <g fill="#F4B41A">
+              <rect x="422" y="192" width="6" height="22" rx="3"/>
+              <rect x="436" y="180" width="6" height="46" rx="3"/>
+              <rect x="450" y="188" width="6" height="30" rx="3"/>
+              <rect x="464" y="175" width="6" height="56" rx="3"/>
+              <rect x="478" y="186" width="6" height="34" rx="3"/>
+              <rect x="492" y="194" width="6" height="18" rx="3"/>
+            </g>
+            <!-- Timeline Tracks at Bottom -->
+            <rect x="90" y="282" width="460" height="72" rx="12" fill="#0F1419" stroke="#FFFFFF" stroke-opacity="0.15"/>
+            <rect x="110" y="298" width="180" height="16" rx="6" fill="#146170"/>
+            <rect x="300" y="298" width="230" height="16" rx="6" fill="#F4B41A"/>
+            <rect x="110" y="322" width="420" height="14" rx="6" fill="#FFFFFF" fill-opacity="0.18"/>
+            <line x1="265" y1="282" x2="265" y2="354" stroke="#F4B41A" stroke-width="2.5"/>
+          </svg>
+        `
+      }
+    ];
+
+    // Load initial config from embedded JSON script tag
+    const embeddedConfigEl = document.getElementById('h4-site-config');
+    let siteConfig = JSON.parse(embeddedConfigEl.textContent);
+
+    // Check if user has temporary session overrides in localStorage
+    try {
+      const savedLocal = localStorage.getItem('h4_volunteers_2026_config');
+      if (savedLocal) {
+        const parsed = JSON.parse(savedLocal);
+        siteConfig = {
+          ...siteConfig,
+          ...parsed,
+          photos: { ...siteConfig.photos, ...(parsed.photos || {}) }
+        };
+      }
+    } catch (e) {
+      // Ignore storage access errors in restricted environments
+    }
+
+    // Track temporary blob URLs for local file previews inside the session
+    const localPreviewBlobUrls = {};
+    let currentFilter = 'all';
+    let currentLightboxIndex = 0;
+    let resetPending = false;
+
+    /**
+     * Returns the active image source for a given program item ID (blob preview -> configured URL -> empty for SVG)
+     */
+    function getItemPhotoUrl(itemId) {
+      if (localPreviewBlobUrls[itemId]) return localPreviewBlobUrls[itemId];
+      if (siteConfig.photos && siteConfig.photos[itemId]) return siteConfig.photos[itemId].trim();
+      return '';
+    }
+
+    /**
+     * Renders both the Hero 2x2 Bento Collage and the 4-Card Showcase Gallery
+     */
+    function renderVisuals() {
+      // 1. Render Hero 2x2 Bento Collage
+      const collageContainer = document.getElementById('hero-collage-grid');
+      if (collageContainer) {
+        collageContainer.innerHTML = PROGRAM_ITEMS.map((item, idx) => {
+          const photoUrl = getItemPhotoUrl(item.id);
+          return `
+            <button
+              type="button"
+              onclick="openLightbox(${idx})"
+              class="group relative aspect-[16/10] rounded-xl overflow-hidden bg-[#0F1419] border border-white/10 hover:border-[#F4B41A] text-left focus:outline-none transition-all"
+            >
+              ${
+                photoUrl
+                  ? `<img
+                       src="${escapeHtml(photoUrl)}"
+                       alt="${escapeHtml(item.title)}"
+                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                     />
+                     <div style="display:none;" class="w-full h-full">${item.svgArt}</div>`
+                  : `<div class="w-full h-full group-hover:scale-105 transition-transform duration-300">${item.svgArt}</div>`
+              }
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F1419]/90 via-[#0F1419]/20 to-transparent"></div>
+              <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between gap-2">
+                <span class="px-2 py-0.5 rounded bg-[#0F1419]/85 backdrop-blur-sm border border-white/15 text-[11px] font-display font-bold text-white truncate">
+                  ${escapeHtml(item.shortTitle)}
+                </span>
+                <span class="w-6 h-6 rounded-full bg-[#F4B41A] text-[#0F1419] flex items-center justify-center shrink-0 opacity-90 group-hover:scale-110 transition-transform">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+          `;
+        }).join('');
+      }
+
+      // 2. Render Filterable 4-Card Showcase Gallery
+      const galleryContainer = document.getElementById('gallery-cards-grid');
+      if (galleryContainer) {
+        const visibleItems = PROGRAM_ITEMS.map((item, idx) => ({ item, idx })).filter(
+          ({ item }) => currentFilter === 'all' || item.category === currentFilter
+        );
+
+        galleryContainer.innerHTML = visibleItems.map(({ item, idx }) => {
+          const photoUrl = getItemPhotoUrl(item.id);
+          return `
+            <article class="card-hover bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between">
+              <div>
+                <!-- 16:10 Media Frame -->
+                <div
+                  onclick="openLightbox(${idx})"
+                  class="relative aspect-[16/10] bg-[#0F1419] overflow-hidden cursor-pointer group"
+                >
+                  ${
+                    photoUrl
+                      ? `<img
+                           src="${escapeHtml(photoUrl)}"
+                           alt="${escapeHtml(item.title)}"
+                           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                         />
+                         <div style="display:none;" class="w-full h-full">${item.svgArt}</div>`
+                      : `<div class="w-full h-full group-hover:scale-105 transition-transform duration-300">${item.svgArt}</div>`
+                  }
+                  <div class="absolute top-3.5 left-3.5">
+                    <span class="px-3 py-1 rounded-lg bg-[#0F1419]/90 backdrop-blur-sm text-[#F4B41A] border border-white/15 font-display font-extrabold text-xs uppercase tracking-wider">
+                      ${escapeHtml(item.badge)}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="p-6">
+                  <h3 class="font-display font-extrabold text-xl text-[#0F1419]">
+                    ${escapeHtml(item.title)}
+                  </h3>
+                  <p class="text-slate-600 text-sm sm:text-base leading-relaxed mt-2">
+                    ${escapeHtml(item.description)}
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card Footer -->
+              <div class="px-6 pb-6 pt-2 flex items-center justify-between gap-3 border-t border-slate-100">
+                <span class="text-xs font-semibold text-[#146170]">
+                  ${escapeHtml(item.crewLabel)}
+                </span>
+                <button
+                  type="button"
+                  onclick="openLightbox(${idx})"
+                  class="inline-flex items-center gap-1.5 text-xs font-display font-bold text-[#0F1419] hover:text-[#146170] py-1.5 px-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors shrink-0"
+                >
+                  <span>Expand</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+          `;
+        }).join('');
+      }
+    }
+
+    /**
+     * Filters the 4-card gallery by category
+     */
+    function filterGallery(category) {
+      currentFilter = category;
+      document.querySelectorAll('.filter-btn').forEach((btn) => {
+        const isMatch = btn.getAttribute('data-filter') === category;
+        if (isMatch) {
+          btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+          btn.classList.add('bg-[#0F1419]', 'text-white', 'shadow-sm');
+        } else {
+          btn.classList.remove('bg-[#0F1419]', 'text-white', 'shadow-sm');
+          btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+        }
+      });
+      renderVisuals();
+    }
+
+    /**
+     * Interactive Crew Matcher logic
+     */
+    function matchCrew(crewKey) {
+      const resetBtn = document.getElementById('reset-matcher-btn');
+      const cards = {
+        dance: document.getElementById('crew-card-dance'),
+        media: document.getElementById('crew-card-media'),
+        ops: document.getElementById('crew-card-ops')
+      };
+
+      document.querySelectorAll('.matcher-btn').forEach((btn) => {
+        const isSelected = btn.getAttribute('data-crew-match') === crewKey;
+        if (isSelected) {
+          btn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300');
+          btn.classList.add('bg-[#0F1419]', 'text-[#F4B41A]', 'border-[#0F1419]', 'shadow-sm');
+        } else {
+          btn.classList.remove('bg-[#0F1419]', 'text-[#F4B41A]', 'border-[#0F1419]', 'shadow-sm');
+          btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300');
+        }
+      });
+
+      if (crewKey === 'all') {
+        resetBtn.classList.add('hidden');
+        Object.values(cards).forEach((card) => {
+          card.classList.remove('ring-4', 'ring-[#F4B41A]', 'opacity-55');
+        });
+        return;
+      }
+
+      resetBtn.classList.remove('hidden');
+      Object.entries(cards).forEach(([key, card]) => {
+        if (key === crewKey) {
+          card.classList.add('ring-4', 'ring-[#F4B41A]');
+          card.classList.remove('opacity-55');
+        } else {
+          card.classList.remove('ring-4', 'ring-[#F4B41A]');
+          card.classList.add('opacity-55');
+        }
+      });
+
+      // Also sync the bottom Google Form crew selector
+      const crewSelect = document.getElementById('crew-select');
+      const crewMap = {
+        dance: 'Dance & Youth Crew (Teach + Film)',
+        media: 'Media & Design Crew (Edit + Design)',
+        ops: 'Outreach, Ops & Events Crew (Promote + Organize + Host)'
+      };
+      if (crewSelect && crewMap[crewKey]) {
+        crewSelect.value = crewMap[crewKey];
+        updateGeneratedUrl();
+      }
+    }
+
+    /**
+     * Selects a crew from its card button and scrolls smoothly to the sign-up launcher
+     */
+    function selectCrewAndScroll(crewOptionValue) {
+      const crewSelect = document.getElementById('crew-select');
+      if (crewSelect) {
+        crewSelect.value = crewOptionValue;
+        updateGeneratedUrl();
+      }
+      const applySection = document.getElementById('apply');
+      if (applySection) {
+        applySection.scrollIntoView({ behavior: 'smooth' });
+      }
+      showToast(`Selected: ${crewOptionValue}`);
+    }
+
+    /**
+     * Handles school dropdown selection (including custom school input toggle)
+     */
+    function handleSchoolChange() {
+      const select = document.getElementById('school-select');
+      const customInput = document.getElementById('custom-school-input');
+      if (select.value === '__custom__') {
+        customInput.classList.remove('hidden');
+        customInput.focus();
+      } else {
+        customInput.classList.add('hidden');
+      }
+      updateGeneratedUrl();
+    }
+
+    /**
+     * Computes the active school name from either dropdown or custom text box
+     */
+    function getSelectedSchoolName() {
+      const select = document.getElementById('school-select');
+      if (select.value === '__custom__') {
+        const typed = document.getElementById('custom-school-input').value.trim();
+        return typed || 'Toronto High School';
+      }
+      return select.value;
+    }
+
+    /**
+     * Builds the pre-filled Google Form URL dynamically
+     */
+    function updateGeneratedUrl() {
+      const schoolName = getSelectedSchoolName();
+      const crewName = document.getElementById('crew-select').value;
+      const baseUrl = (siteConfig.formBaseUrl || '').trim();
+      const schoolEntry = (siteConfig.schoolEntryId || '').trim();
+      const crewEntry = (siteConfig.crewEntryId || '').trim();
+
+      let finalUrl = baseUrl;
+      try {
+        const urlObj = new URL(baseUrl);
+        if (schoolEntry) {
+          urlObj.searchParams.set(schoolEntry, schoolName);
+        }
+        if (crewEntry) {
+          urlObj.searchParams.set(crewEntry, crewName);
+        }
+        finalUrl = urlObj.toString();
+      } catch (e) {
+        // Fallback string concatenation if baseUrl is a partial URL
+        const sep = baseUrl.includes('?') ? '&' : '?';
+        const params = [];
+        if (schoolEntry) params.push(`${encodeURIComponent(schoolEntry)}=${encodeURIComponent(schoolName)}`);
+        if (crewEntry) params.push(`${encodeURIComponent(crewEntry)}=${encodeURIComponent(crewName)}`);
+        finalUrl = params.length ? `${baseUrl}${sep}${params.join('&')}` : baseUrl;
+      }
+
+      const urlInput = document.getElementById('generated-form-url');
+      const launchBtn = document.getElementById('launch-form-btn');
+      if (urlInput) urlInput.value = finalUrl;
+      if (launchBtn) launchBtn.href = finalUrl;
+    }
+
+    /**
+     * Handles clicking "Open Pre-Filled Sign-Up Form"
+     */
+    function handleLaunchClick(event) {
+      const baseUrl = (siteConfig.formBaseUrl || '').trim();
+      if (baseUrl.includes('1FAIpQLSf_H4_Volunteer_SignUp_2026_2027')) {
+        event.preventDefault();
+        showToast('Placeholder Form URL active — click "Customize" to paste your live Google Form link.');
+        openStudioModal();
+      }
+    }
+
+    /**
+     * Copies the pre-filled school link using document.execCommand('copy') for iFrame reliability
+     */
+    function copyShareableLink() {
+      const urlInput = document.getElementById('generated-form-url');
+      const schoolName = getSelectedSchoolName();
+      if (!urlInput) return;
+
+      urlInput.select();
+      urlInput.setSelectionRange(0, 99999);
+      let copied = false;
+      try {
+        copied = document.execCommand('copy');
+      } catch (err) {
+        copied = false;
+      }
+
+      if (copied) {
+        showToast(`Copied pre-filled link for ${schoolName}!`);
+      } else {
+        showToast('Link selected — press Ctrl+C / Cmd+C to copy.');
+      }
+    }
+
+    /**
+     * Lightbox Modal Controls
+     */
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      renderLightboxContent();
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function stepLightbox(delta) {
+      currentLightboxIndex = (currentLightboxIndex + delta + PROGRAM_ITEMS.length) % PROGRAM_ITEMS.length;
+      renderLightboxContent();
+    }
+
+    function renderLightboxContent() {
+      const item = PROGRAM_ITEMS[currentLightboxIndex];
+      const photoUrl = getItemPhotoUrl(item.id);
+      document.getElementById('lightbox-badge').textContent = item.badge;
+      document.getElementById('lightbox-title').textContent = item.title;
+      document.getElementById('lightbox-desc').textContent = item.description;
+      document.getElementById('lightbox-crew').textContent = item.crewLabel;
+
+      const visualEl = document.getElementById('lightbox-visual');
+      visualEl.innerHTML = photoUrl
+        ? `<img
+             src="${escapeHtml(photoUrl)}"
+             alt="${escapeHtml(item.title)}"
+             class="w-full h-full object-cover"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+           />
+           <div style="display:none;" class="w-full h-full">${item.svgArt}</div>`
+        : `<div class="w-full h-full">${item.svgArt}</div>`;
+    }
+
+    /**
+     * Customize Photos & Form Link Studio Modal
+     */
+    function openStudioModal() {
+      resetPending = false;
+      const resetBtn = document.getElementById('studio-reset-btn');
+      if (resetBtn) resetBtn.textContent = 'Reset Defaults';
+
+      document.getElementById('studio-form-url').value = siteConfig.formBaseUrl || '';
+      document.getElementById('studio-school-entry').value = siteConfig.schoolEntryId || '';
+      document.getElementById('studio-crew-entry').value = siteConfig.crewEntryId || '';
+
+      const inputsContainer = document.getElementById('studio-photo-inputs');
+      inputsContainer.innerHTML = PROGRAM_ITEMS.map((item) => {
+        const currentUrl = (siteConfig.photos && siteConfig.photos[item.id]) || '';
+        return `
+          <div class="bg-[#F8FAFC] border border-slate-200 rounded-xl p-4 space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="font-display font-bold text-xs uppercase tracking-wider text-[#146170]">
+                ${escapeHtml(item.badge)}
+              </span>
+              <span id="studio-status-${item.id}" class="text-[11px] text-slate-500">
+                ${localPreviewBlobUrls[item.id] ? 'Local preview active' : currentUrl ? 'Custom URL set' : 'Default artwork'}
+              </span>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 mb-1">Hosted Image URL</label>
+              <input
+                type="url"
+                id="studio-photo-url-${item.id}"
+                value="${escapeHtml(currentUrl)}"
+                placeholder="https://... (JPG/PNG URL)"
+                class="w-full px-3 py-2 rounded-lg bg-white border border-slate-300 text-xs font-mono focus:outline-none focus:border-[#146170]"
+              />
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 mb-1">Or Preview Local File</label>
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleLocalPhotoUpload(event, '${item.id}')"
+                class="block w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-[#0F1419] file:text-white hover:file:bg-[#146170] cursor-pointer"
+              />
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('studio-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeStudioModal() {
+      document.getElementById('studio-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    /**
+     * Loads a local image via ObjectURL for instant live preview without base64 bloat
+     */
+    function handleLocalPhotoUpload(event, itemId) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      if (localPreviewBlobUrls[itemId]) {
+        URL.revokeObjectURL(localPreviewBlobUrls[itemId]);
+      }
+      localPreviewBlobUrls[itemId] = URL.createObjectURL(file);
+      const statusEl = document.getElementById(`studio-status-${itemId}`);
+      if (statusEl) statusEl.textContent = `Previewing: ${file.name}`;
+      renderVisuals();
+      showToast(`Live preview updated for ${itemId}. Paste a hosted URL before downloading HTML for permanent hosting.`);
+    }
+
+    /**
+     * Applies Studio changes to live page and saves to localStorage
+     */
+    function applyStudioChanges() {
+      siteConfig.formBaseUrl = document.getElementById('studio-form-url').value.trim() || siteConfig.formBaseUrl;
+      siteConfig.schoolEntryId = document.getElementById('studio-school-entry').value.trim();
+      siteConfig.crewEntryId = document.getElementById('studio-crew-entry').value.trim();
+
+      PROGRAM_ITEMS.forEach((item) => {
+        const urlVal = document.getElementById(`studio-photo-url-${item.id}`).value.trim();
+        siteConfig.photos[item.id] = urlVal;
+        if (urlVal && localPreviewBlobUrls[item.id]) {
+          URL.revokeObjectURL(localPreviewBlobUrls[item.id]);
+          delete localPreviewBlobUrls[item.id];
+        }
+      });
+
+      try {
+        localStorage.setItem('h4_volunteers_2026_config', JSON.stringify(siteConfig));
+      } catch (e) {
+        // Ignore storage limits
+      }
+
+      renderVisuals();
+      updateGeneratedUrl();
+      closeStudioModal();
+      showToast('Site photos and Google Form settings updated!');
+    }
+
+    /**
+     * Two-step inline reset confirmation (zero confirm() dialogs)
+     */
+    function handleStudioReset() {
+      const resetBtn = document.getElementById('studio-reset-btn');
+      if (!resetPending) {
+        resetPending = true;
+        resetBtn.textContent = 'Click Again to Confirm Reset';
+        return;
+      }
+
+      resetPending = false;
+      Object.keys(localPreviewBlobUrls).forEach((k) => {
+        URL.revokeObjectURL(localPreviewBlobUrls[k]);
+        delete localPreviewBlobUrls[k];
+      });
+
+siteConfig = {
+        formBaseUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf9mPDbMjzS17Zj92zdtz2OjG-YgWYXtQiZJ-w_uRSYBfWYSQ/viewform',
+        schoolEntryId: 'entry.620543743',
+        crewEntryId: '',
+        photos: {
+          workshops: 'https://lh3.googleusercontent.com/d/1pJzkohUfRH3ffb_viPMrWRs5LEIwVNbO=w1200',
+          mentorship: 'https://lh3.googleusercontent.com/d/1K_WkGvxFxUqppVGPYvXBhetsa_O9zvJR=w1200',
+          showcases: 'https://lh3.googleusercontent.com/d/1q8gw4s_CCFENOoMR-GYhWHktdhXTD5UF=w1200',
+          media: 'https://lh3.googleusercontent.com/d/1g-N2Mt1sedx3ffuMtsZuF-5xCdd8ylu_=w1200'
+        }
+      };
+
+      try {
+        localStorage.removeItem('h4_volunteers_2026_config');
+      } catch (e) {}
+
+      renderVisuals();
+      updateGeneratedUrl();
+      closeStudioModal();
+      showToast('Reset to default artwork and settings.');
+    }
+
+    /**
+     * Downloads a standalone index.html with the user's updated config baked in
+     */
+    function downloadStandaloneHtml() {
+      applyStudioChanges();
+
+      // Clone document HTML and inject updated JSON config into #h4-site-config
+      const docClone = document.documentElement.cloneNode(true);
+      const configScript = docClone.querySelector('#h4-site-config');
+      if (configScript) {
+        configScript.textContent = '\n' + JSON.stringify(siteConfig, null, 2) + '\n  ';
+      }
+
+      // Ensure modals and toast are hidden in exported HTML
+      ['lightbox-modal', 'studio-modal', 'toast-banner'].forEach((id) => {
+        const el = docClone.querySelector(`#${id}`);
+        if (el) el.classList.add('hidden');
+      });
+
+      const fullHtml = '<!DOCTYPE html>\n' + docClone.outerHTML;
+      const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+      const downloadUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = downloadUrl;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(downloadUrl);
+
+      showToast('Downloaded standalone index.html ready for volunteers.h4community.org!');
+    }
+
+    /**
+     * Mobile Navigation Helpers
+     */
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.add('hidden');
+    }
+
+    /**
+     * Non-blocking Toast Banner
+     */
+    let toastTimer = null;
+    function showToast(msg) {
+      const banner = document.getElementById('toast-banner');
+      const msgEl = document.getElementById('toast-message');
+      if (!banner || !msgEl) return;
+
+      msgEl.textContent = msg;
+      banner.classList.remove('hidden');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        banner.classList.add('hidden');
+      }, 3600);
+    }
+
+    /**
+     * Basic HTML Escaping Helper
+     */
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    // Keyboard Escape & Arrow Navigation for Modals
+    document.addEventListener('keydown', (e) => {
+      const lightboxOpen = !document.getElementById('lightbox-modal').classList.contains('hidden');
+      const studioOpen = !document.getElementById('studio-modal').classList.contains('hidden');
+
+      if (e.key === 'Escape') {
+        if (lightboxOpen) closeLightbox();
+        if (studioOpen) closeStudioModal();
+      } else if (lightboxOpen && e.key === 'ArrowRight') {
+        stepLightbox(1);
+      } else if (lightboxOpen && e.key === 'ArrowLeft') {
+        stepLightbox(-1);
+      }
+    });
+
+    // Initialize Page on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderVisuals();
+      updateGeneratedUrl();
+    });
+  </script>
+</body>
+</html>
