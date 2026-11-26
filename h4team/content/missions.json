@@ -1,0 +1,129 @@
+[
+  {
+    "id": "launch-your-school-team",
+    "title": "Launch Your School Team",
+    "goal": "Have one lead, a small team and an approved way to communicate.",
+    "steps": [
+      "Meet your team and choose a crew.",
+      "Find interested students and learn your school rules.",
+      "Make a team intro for adult review."
+    ],
+    "resources": [
+      {
+        "label": "Student Quick Start",
+        "url": "../start/"
+      },
+      {
+        "label": "Welcome message",
+        "url": "../resources/#welcome-message"
+      },
+      {
+        "label": "School Lead Playbook",
+        "url": "../lead/"
+      }
+    ],
+    "approval": "Confirm the team with your lead and an adult. Use a school-approved channel with a named adult moderator.",
+    "complete": "Your lead and an adult confirm the team is ready, and everyone has one task.",
+    "number": "01"
+  },
+  {
+    "id": "bring-h4-to-your-school",
+    "title": "Bring H4 to Your School",
+    "goal": "Find a teacher interested in an H4 workshop.",
+    "steps": [
+      "Identify a teacher and introduce H4 using the handout.",
+      "Draft a flyer or announcement for approval.",
+      "Ask about possible times and help only after the workshop is confirmed."
+    ],
+    "resources": [
+      {
+        "label": "Teacher workshop package",
+        "url": "../resources/#teacher-workshop"
+      },
+      {
+        "label": "Teacher introduction",
+        "url": "../resources/#teacher-introduction"
+      },
+      {
+        "label": "Workshop guide",
+        "url": "../guides/#bring-an-h4-workshop"
+      }
+    ],
+    "approval": "A teacher or the office approves school promotion. H4 and the school confirm the workshop and supervision before anything is announced.",
+    "complete": "A teacher expresses interest. The H4 director follows up and confirms any date.",
+    "number": "02"
+  },
+  {
+    "id": "start-an-h4-club",
+    "title": "Start an H4 Club",
+    "goal": "Help a teacher set up a school-approved club.",
+    "steps": [
+      "Ask how your school starts a club.",
+      "Find a teacher willing to supervise.",
+      "Draft the club plan and a first meeting agenda."
+    ],
+    "resources": [
+      {
+        "label": "Teacher and student club plan",
+        "url": "../resources/#club-plan"
+      },
+      {
+        "label": "Club guide",
+        "url": "../guides/#start-an-h4-school-club"
+      },
+      {
+        "label": "First meeting agenda",
+        "url": "../lead/#first-meeting"
+      }
+    ],
+    "approval": "The school approves the club, space and supervision before the first meeting.",
+    "complete": "The school approves the club and a teacher agrees to supervise.",
+    "number": "03"
+  },
+  {
+    "id": "get-battle-ready",
+    "title": "Get Battle Ready",
+    "goal": "Build an interested dance crew and a safe practice plan.",
+    "steps": [
+      "Find students who want to practise.",
+      "Draft a beginner-friendly practice with your teacher.",
+      "Show one move in a private video or written guide."
+    ],
+    "resources": [
+      {
+        "label": "Dance crew instructions",
+        "url": "../guides/#build-a-school-dance-crew"
+      },
+      {
+        "label": "Signup QR code",
+        "url": "../resources/#signup-qr"
+      }
+    ],
+    "approval": "Get teacher approval for space and supervision. Use private, approved channels for videos. Ask H4 about event details before planning to attend.",
+    "complete": "Your teacher approves the practice plan and your crew receives event details from H4.",
+    "number": "04"
+  },
+  {
+    "id": "grow-the-movement",
+    "title": "Grow the Movement",
+    "goal": "Find a new school or community space that might welcome H4.",
+    "steps": [
+      "Look up nearby schools and their public contact pages.",
+      "Find possible youth activity spaces.",
+      "Draft a short outreach message for the director."
+    ],
+    "resources": [
+      {
+        "label": "Outreach draft",
+        "url": "../resources/#community-outreach"
+      },
+      {
+        "label": "Safety and communication",
+        "url": "../help/"
+      }
+    ],
+    "approval": "Use public organization contacts. An adult approves the message and route and handles formal outreach.",
+    "complete": "The H4 director receives a useful lead and decides whether to contact the organization.",
+    "number": "05"
+  }
+]

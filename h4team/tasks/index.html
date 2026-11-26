@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse tasks by crew, time and mission. Ask your H4 lead for your official assignment.">
+  <title>Find a Task | H4 Team Hub</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/h4team/assets/hub.css">
+  <script type="module" src="/h4team/assets/hub.js"></script>
+</head>
+<body data-page="tasks">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/h4team/" aria-label="H4 Team Hub home">
+        <img src="/h4team/assets/logo.webp" alt="" width="40" height="40">
+        <span>H4 <strong>Team Hub</strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="/h4team/start/">Start Here</a>
+<a href="/h4team/missions/">Missions</a>
+<a href="/h4team/tasks/" aria-current="page">Find a Task</a>
+<a href="/h4team/resources/">Resources</a>
+<a href="/h4team/lead/">Leadership</a></nav>
+      <details class="mobile-nav">
+        <summary>Menu <span class="icon-menu" aria-hidden="true"></span></summary>
+        <nav aria-label="Mobile navigation"><a href="/h4team/start/">Start Here</a>
+<a href="/h4team/missions/">Missions</a>
+<a href="/h4team/tasks/" aria-current="page">Find a Task</a>
+<a href="/h4team/resources/">Resources</a>
+<a href="/h4team/lead/">Leadership</a></nav>
+      </details>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head"><div class="wrap"><a class="return" href="/h4team/">Team Hub</a><h1>Find a Task</h1><p>Browse tasks by crew, time and mission. Ask your H4 lead for your official assignment.</p></div></section>
+
+    <div class="wrap section">
+      <form id="task-filters" class="filters" role="search">
+        <label>Search tasks <input id="task-search" type="search" name="search" placeholder="Title, ID or keyword"></label>
+        <label>Crew <select name="crew"><option value="">All crews</option><option>Dance</option><option>Media</option><option>Ops</option></select></label>
+        <label>Time <select name="time"><option value="">Any time</option><option value="short">Up to 30 min</option><option value="medium">31–60 min</option></select></label>
+        <label>Mission <select name="mission"><option value="">All missions</option></select></label>
+        <button class="button button-quiet" type="reset">Reset filters</button>
+      </form>
+      <p id="task-count" class="status" role="status"></p>
+      <div id="task-list" class="task-list" aria-busy="true"><p>Loading tasks…</p></div>
+      <noscript><p>Turn on JavaScript to view and filter tasks.</p></noscript>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div><strong>H4 Community</strong><p>How Hip Hop Helps · Toronto</p></div>
+      <nav aria-label="Footer navigation">
+        <a href="/">Volunteer signup</a>
+        <a href="/h4team/help/">Get Help</a>
+        <a href="https://h4hours.org/">Open H4Hours <span class="icon-arrow" aria-hidden="true"></span></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

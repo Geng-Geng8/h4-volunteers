@@ -1,0 +1,157 @@
+[
+  {
+    "title": "School promotion",
+    "items": [
+      {
+        "id": "school-announcement",
+        "title": "School announcement",
+        "description": "Ask the school office or your teacher to approve this draft.",
+        "text": "Want to dance, make videos or help run events? H4 Community is looking for high school volunteers! You don’t need dance experience. Choose Dance, Media or Ops. Learn more at volunteers.howhiphophelps.org or speak with [approved teacher contact]."
+      },
+      {
+        "id": "classroom-newsletter",
+        "title": "Classroom or newsletter",
+        "description": "Give this to your teacher to share through a school-approved channel.",
+        "text": "Students interested in dance, media, leadership or volunteering can learn more about H4 Community at volunteers.howhiphophelps.org. Please use the official signup process. School activities are subject to approval."
+      },
+      {
+        "id": "message-pack",
+        "title": "Message and promotion pack",
+        "description": "Printable scripts for school teams, teachers and school promotion.",
+        "download": "../assets/launch-kit/06_messages_and_promotion.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Teacher outreach",
+    "items": [
+      {
+        "id": "teacher-introduction",
+        "title": "Introduce H4 to a teacher",
+        "description": "Use this when your school allows student introductions and have the workshop handout ready.",
+        "text": "Hi [teacher], I’m volunteering with H4 Community. We use hip hop to help students build confidence and leadership. We’re hoping to bring a workshop or club to our school. Would you be interested in learning more? I have a short teacher handout. H4 can contact you if you’re interested."
+      },
+      {
+        "id": "teacher-follow-up",
+        "title": "Thank a teacher",
+        "description": "Follow up through a school-approved channel. H4 handles the formal follow-up.",
+        "text": "Hi [teacher], thank you for speaking with me about H4. Would it be okay for our H4 director to follow up with you? Here is the teacher handout. Thank you for your time!"
+      },
+      {
+        "id": "community-outreach",
+        "title": "Community space outreach",
+        "description": "Give your draft to the director. An adult sends the message.",
+        "text": "Hello, I’m contacting you from H4 Community, a youth development nonprofit using hip hop, dance and leadership. We are exploring safe, supervised spaces for youth activities. Would you be open to a short conversation about your programs, space and approval process? Thank you."
+      }
+    ]
+  },
+  {
+    "title": "Workshop planning",
+    "items": [
+      {
+        "id": "teacher-workshop",
+        "title": "Teacher workshop handout",
+        "description": "An introduction to H4, what students can learn and how a teacher can express interest. Availability depends on H4 and school approval.",
+        "download": "../assets/launch-kit/teacher-workshop.pdf",
+        "url": "../guides/#bring-an-h4-workshop",
+        "linkLabel": "Read the workshop guide"
+      }
+    ]
+  },
+  {
+    "title": "School clubs",
+    "items": [
+      {
+        "id": "club-plan",
+        "title": "Teacher and student club plan",
+        "description": "Work with a teacher to draft a club goal, activities, meeting plan and approval steps.",
+        "download": "../assets/launch-kit/teacher-club-plan.pdf",
+        "url": "../guides/#start-an-h4-school-club",
+        "linkLabel": "Read the club guide"
+      }
+    ]
+  },
+  {
+    "title": "Volunteer recruitment",
+    "items": [
+      {
+        "id": "flyer",
+        "title": "Recruitment flyer",
+        "description": "Download the print flyer or copy the wording for a school-approved design. Get H4 and school approval before posting.",
+        "text": "H4 COMMUNITY / HOW HIP HOP HELPS\n\nBE PART OF THE MOVEMENT.\n\nDANCE. LEAD. CREATE. BELONG.\n\nHigh school volunteers wanted. No dance experience needed.\n\nDANCE — Learn. Build a crew.\n\nMEDIA — Create. Share ideas.\n\nOPS — Organize. Lead.\n\nSCAN TO JOIN H4\n\nhttps://volunteers.howhiphophelps.org/\n\n@howhiphophelps\n\nCONFIDENCE IN MOTION\n\nSchool activities require approval.",
+        "download": "../assets/launch-kit/07_recruitment_flyer.pdf",
+        "image": {
+          "url": "../assets/launch-kit/flyer-preview.webp",
+          "alt": "H4 volunteer flyer with the official signup QR code",
+          "width": 526,
+          "height": 680
+        }
+      },
+      {
+        "id": "signup-qr",
+        "title": "Official signup QR code",
+        "description": "Scan to open the H4 volunteer recruitment website. Include the readable website address when sharing the code.",
+        "download": "../assets/launch-kit/signup-qr.png",
+        "image": {
+          "url": "../assets/launch-kit/signup-qr.png",
+          "alt": "QR code for the H4 volunteer recruitment website",
+          "width": 370,
+          "height": 370
+        },
+        "url": "https://volunteers.howhiphophelps.org/",
+        "linkLabel": "Open the signup site"
+      },
+      {
+        "id": "welcome-message",
+        "title": "Welcome your team",
+        "description": "Use this in the approved school group chat.",
+        "text": "Hey! Welcome to H4 at [school]. We’re working together to bring dance, media and leadership opportunities to our school. Pick Dance, Media or Ops. I’ll help you choose one small task this week. If you get stuck, just ask!"
+      }
+    ]
+  },
+  {
+    "title": "Leadership",
+    "items": [
+      {
+        "id": "quick-start",
+        "title": "Student Quick Start Guide",
+        "description": "A printable guide to your first week and finishing your first task.",
+        "download": "../assets/launch-kit/01_student_quick_start.pdf",
+        "url": "../start/",
+        "linkLabel": "Read Start Here"
+      },
+      {
+        "id": "lead-playbook",
+        "title": "School Lead Playbook",
+        "description": "A printable reference for running a school team and supporting volunteers.",
+        "download": "../assets/launch-kit/02_school_lead_playbook.pdf",
+        "url": "../lead/",
+        "linkLabel": "Read the leadership lessons"
+      },
+      {
+        "id": "monday-message",
+        "title": "Monday assignment message",
+        "description": "Confirm the assignment and due date in H4Hours first. Use approved channels.",
+        "text": "Hey team! Our goal this week is [goal]. [Name], your task is [task]. Please check H4Hours and let me know by Tuesday if it works for you. Aim to finish by Friday. If you need help or a different task, tell me."
+      },
+      {
+        "id": "friendly-check-in",
+        "title": "Friendly check-in",
+        "description": "Check in once, in private, through an approved channel.",
+        "text": "Hey [name], how is your task going? No worries if you got busy. Do you need help, more time or a different task?"
+      },
+      {
+        "id": "friday-celebration",
+        "title": "Friday celebration",
+        "description": "Thank your team and share the next goal.",
+        "text": "Great work this week! We finished [team result]. Thank you for helping. Next week we’re working on [goal]. If you have an idea, let us know!"
+      },
+      {
+        "id": "ask-director",
+        "title": "Ask the director for help",
+        "description": "Say what is holding you up and ask one clear question. Keep sensitive details private.",
+        "text": "Hi, our school is [school]. We are working on [mission]. We are stuck because [reason]. Can you help us with [specific question]?"
+      }
+    ]
+  }
+]

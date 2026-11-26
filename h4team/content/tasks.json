@@ -1,0 +1,517 @@
+[
+  {
+    "id": "T01",
+    "title": "Meet your team",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 20,
+    "purpose": "Join your school team and choose a crew.",
+    "missions": [
+      "launch-your-school-team"
+    ],
+    "steps": [
+      "Ask your lead how to join the approved chat.",
+      "Say hello and pick Dance, Media or Ops."
+    ],
+    "resources": [
+      {
+        "label": "Welcome message",
+        "url": "../resources/#welcome-message"
+      }
+    ],
+    "submit": "Tell your lead which team you picked.",
+    "approval": "Do not share private contact details in the chat.",
+    "assignment": "T01 — Meet your team\nAsk your lead how to join the approved group chat. Say hello and share which team you want to join. Proof: Tell your lead which team you picked. Safety: Do not share private contact details in the chat."
+  },
+  {
+    "id": "T02",
+    "title": "Find interested students",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 30,
+    "purpose": "Find students who might want to join H4.",
+    "missions": [
+      "launch-your-school-team"
+    ],
+    "steps": [
+      "Ask a few friends if they want to learn about H4.",
+      "Share the official signup link where your school allows it.",
+      "Count how many people are interested."
+    ],
+    "resources": [
+      {
+        "label": "Official signup QR code",
+        "url": "../resources/#signup-qr"
+      }
+    ],
+    "submit": "Report how many students showed interest; no names or phone numbers.",
+    "approval": "Use the official signup form; do not collect contact lists.",
+    "assignment": "T02 — Find interested students\nAsk a few friends if they want to learn about H4. Share the approved signup link only where allowed. Proof: Report how many students showed interest; no names or phone numbers. Safety: Use the official signup form; do not collect contact lists."
+  },
+  {
+    "id": "T03",
+    "title": "Learn your school rules",
+    "crew": "Ops",
+    "minimumMinutes": 20,
+    "minutes": 30,
+    "purpose": "Find out how to get school approval.",
+    "missions": [
+      "launch-your-school-team"
+    ],
+    "steps": [
+      "Ask your teacher or the office about flyers, clubs and announcements.",
+      "Write down who approves each activity."
+    ],
+    "resources": [
+      {
+        "label": "School office or teacher"
+      }
+    ],
+    "submit": "Write down the rules and who must approve each activity.",
+    "approval": "Do not post or announce anything yet.",
+    "assignment": "T03 — Learn your school rules\nAsk the office or a teacher how students can post flyers, start a club or make announcements. Proof: Write down the rules and who must approve each activity. Safety: Do not post or announce anything yet."
+  },
+  {
+    "id": "T04",
+    "title": "Make a team intro",
+    "crew": "Media",
+    "minimumMinutes": 20,
+    "minutes": 30,
+    "purpose": "Make a short introduction for your school team.",
+    "missions": [
+      "launch-your-school-team"
+    ],
+    "steps": [
+      "Write who your team is and what you hope to do.",
+      "Make a short text or Canva draft.",
+      "Send it to your lead for review."
+    ],
+    "resources": [
+      {
+        "label": "Recruitment flyer copy",
+        "url": "../resources/#flyer"
+      },
+      {
+        "label": "Text editor or Canva"
+      }
+    ],
+    "submit": "Send the draft or a view-only link to your lead.",
+    "approval": "Keep it private until an adult approves it; no unapproved photos.",
+    "assignment": "T04 — Make a team intro\nCreate a short text or Canva draft introducing your H4 school team and what you hope to do. Proof: Send the draft or a view-only link to your lead. Safety: Keep it private until an adult approves it; no unapproved photos."
+  },
+  {
+    "id": "T05",
+    "title": "Find potential teachers",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 20,
+    "purpose": "Find a teacher who could support H4.",
+    "missions": [
+      "bring-h4-to-your-school"
+    ],
+    "steps": [
+      "Think of teachers who support arts, dance, leadership or clubs.",
+      "Pick up to three staff roles and find the school contact route."
+    ],
+    "resources": [
+      {
+        "label": "Public school website or school office"
+      }
+    ],
+    "submit": "Send the director/lead the approved school contact route and why each might help.",
+    "approval": "Use school contact channels, not private contact details.",
+    "assignment": "T05 — Find potential teachers\nThink of teachers who support dance, arts, leadership or clubs. List up to three teacher roles or school contacts. Proof: Send the director/lead the approved school contact route and why each might help. Safety: Use school contact channels, not private contact details."
+  },
+  {
+    "id": "T06",
+    "title": "Introduce H4 to a teacher",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 30,
+    "purpose": "Find out whether a teacher is interested in H4.",
+    "missions": [
+      "bring-h4-to-your-school"
+    ],
+    "steps": [
+      "Practise the teacher introduction.",
+      "Offer the teacher the workshop handout.",
+      "Ask if H4 can follow up."
+    ],
+    "resources": [
+      {
+        "label": "Teacher introduction",
+        "url": "../resources/#teacher-introduction"
+      },
+      {
+        "label": "Workshop handout",
+        "url": "../resources/#teacher-workshop"
+      }
+    ],
+    "submit": "Send the teacher’s response and next step privately to your lead.",
+    "approval": "Do not promise a date, cost or booking. Adults handle follow-up.",
+    "assignment": "T06 — Introduce H4 to a teacher\nUse the teacher script. Give the teacher the workshop handout. Ask if they want H4 to contact them. Proof: Send the teacher’s response and next step privately to your lead. Safety: Do not promise a date, cost or booking. Adults handle follow-up."
+  },
+  {
+    "id": "T07",
+    "title": "Make a flyer",
+    "crew": "Media",
+    "minimumMinutes": 20,
+    "minutes": 40,
+    "purpose": "Make a recruitment flyer for review.",
+    "missions": [
+      "bring-h4-to-your-school"
+    ],
+    "steps": [
+      "Use the flyer copy and official QR code.",
+      "Make a Canva draft and check both signup routes.",
+      "Send the draft to your lead."
+    ],
+    "resources": [
+      {
+        "label": "Flyer and copy",
+        "url": "../resources/#flyer"
+      },
+      {
+        "label": "Signup QR code",
+        "url": "../resources/#signup-qr"
+      }
+    ],
+    "submit": "Submit a draft link or image for review.",
+    "approval": "An adult and school must approve before posting.",
+    "assignment": "T07 — Make a flyer\nUse the flyer copy in the kit. Make a Canva draft. Keep the real signup link and QR code correct. Proof: Submit a draft link or image for review. Safety: An adult and school must approve before posting."
+  },
+  {
+    "id": "T08",
+    "title": "Write a school announcement",
+    "crew": "Media / Ops",
+    "minimumMinutes": 15,
+    "minutes": 20,
+    "purpose": "Draft a short announcement for your school.",
+    "missions": [
+      "bring-h4-to-your-school"
+    ],
+    "steps": [
+      "Copy the announcement script.",
+      "Add your school name if allowed.",
+      "Ask your lead to check it and find out who approves it."
+    ],
+    "resources": [
+      {
+        "label": "School announcement script",
+        "url": "../resources/#school-announcement"
+      }
+    ],
+    "submit": "Submit the draft and the approval step you found.",
+    "approval": "Office or teacher approval is needed before it goes live.",
+    "assignment": "T08 — Write a school announcement\nCopy the announcement template. Add your school name if allowed. Ask your lead to check it. Proof: Submit the draft and the approval step you found. Safety: Office or teacher approval is needed before it goes live."
+  },
+  {
+    "id": "T09",
+    "title": "Ask about workshop dates",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 25,
+    "purpose": "Help a teacher suggest possible workshop times.",
+    "missions": [
+      "bring-h4-to-your-school"
+    ],
+    "steps": [
+      "Ask which times and spaces could work.",
+      "Ask what approvals are needed.",
+      "Write down two options or the next step."
+    ],
+    "resources": [
+      {
+        "label": "Workshop guide",
+        "url": "../guides/#bring-an-h4-workshop"
+      }
+    ],
+    "submit": "Report two possible times or what the teacher says is needed.",
+    "approval": "Do not book rooms or confirm dates yourself.",
+    "assignment": "T09 — Ask about workshop dates\nAsk the interested teacher what times, spaces and approval steps could work. Proof: Report two possible times or what the teacher says is needed. Safety: Do not book rooms or confirm dates yourself."
+  },
+  {
+    "id": "T10",
+    "title": "Help with a workshop",
+    "crew": "Ops",
+    "minimumMinutes": 30,
+    "minutes": 60,
+    "purpose": "Help with one supervised workshop job.",
+    "missions": [
+      "bring-h4-to-your-school"
+    ],
+    "steps": [
+      "Wait for the director to confirm the workshop.",
+      "Ask your supervisor for one role: setup, welcome, materials or cleanup.",
+      "Follow the adult’s instructions and note your actual time."
+    ],
+    "resources": [
+      {
+        "label": "Workshop guide",
+        "url": "../guides/#bring-an-h4-workshop"
+      },
+      {
+        "label": "Instructions from your supervisor"
+      }
+    ],
+    "submit": "Report what you did and actual time spent.",
+    "approval": "No unsupervised teaching or collection of permission forms.",
+    "assignment": "T10 — Help with a workshop\nAfter the director confirms the event, ask for one safe role: setup, welcome, materials or cleanup. Follow the supervising adult. Proof: Report what you did and actual time spent. Safety: No unsupervised teaching or collection of permission forms."
+  },
+  {
+    "id": "T11",
+    "title": "Learn how to start a club",
+    "crew": "Ops",
+    "minimumMinutes": 20,
+    "minutes": 30,
+    "purpose": "Find out what your school needs to approve a club.",
+    "missions": [
+      "start-an-h4-club"
+    ],
+    "steps": [
+      "Ask your teacher or school office about club rules.",
+      "Write down the steps and any deadlines."
+    ],
+    "resources": [
+      {
+        "label": "Club guide",
+        "url": "../guides/#start-an-h4-school-club"
+      }
+    ],
+    "submit": "Summarize the steps and any deadlines.",
+    "approval": "Do not submit an application without a teacher.",
+    "assignment": "T11 — Learn how to start a club\nAsk a teacher or the school office for the club rules and application steps. Proof: Summarize the steps and any deadlines. Safety: Do not submit an application without a teacher."
+  },
+  {
+    "id": "T12",
+    "title": "Find a club teacher",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 30,
+    "purpose": "Find a teacher who might supervise the club.",
+    "missions": [
+      "start-an-h4-club"
+    ],
+    "steps": [
+      "Use the teacher introduction script.",
+      "Ask whether the teacher might supervise an H4 club."
+    ],
+    "resources": [
+      {
+        "label": "Teacher introduction",
+        "url": "../resources/#teacher-introduction"
+      },
+      {
+        "label": "Club planning sheet",
+        "url": "../resources/#club-plan"
+      }
+    ],
+    "submit": "Report interest or the next person to ask.",
+    "approval": "A teacher decides whether they can supervise.",
+    "assignment": "T12 — Find a club teacher\nUse the teacher script. Ask if they might supervise an H4 club. Proof: Report interest or the next person to ask. Safety: A teacher decides whether they can supervise."
+  },
+  {
+    "id": "T13",
+    "title": "Plan an H4 club",
+    "crew": "Ops / Dance",
+    "minimumMinutes": 20,
+    "minutes": 40,
+    "purpose": "Make a first draft of your school club plan.",
+    "missions": [
+      "start-an-h4-club"
+    ],
+    "steps": [
+      "Fill in the club planning sheet with your team.",
+      "Suggest a goal, time, space and activities.",
+      "Ask your teacher and lead to review it."
+    ],
+    "resources": [
+      {
+        "label": "Club planning sheet",
+        "url": "../resources/#club-plan"
+      }
+    ],
+    "submit": "Share the draft with your lead and teacher.",
+    "approval": "No club meetings until school approval.",
+    "assignment": "T13 — Plan an H4 club\nFill in the club plan template with your team. Suggest a goal, meeting time, space and activities. Proof: Share the draft with your lead and teacher. Safety: No club meetings until school approval."
+  },
+  {
+    "id": "T14",
+    "title": "Plan the first meeting",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 30,
+    "purpose": "Plan a short first meeting for your team.",
+    "missions": [
+      "start-an-h4-club"
+    ],
+    "steps": [
+      "Start with the first meeting agenda.",
+      "Choose one icebreaker, one activity and one next step.",
+      "Plan for 20–30 minutes."
+    ],
+    "resources": [
+      {
+        "label": "First meeting agenda",
+        "url": "../lead/#first-meeting"
+      }
+    ],
+    "submit": "Submit a simple 20–30 minute agenda.",
+    "approval": "Run it only with an approved adult present.",
+    "assignment": "T14 — Plan the first meeting\nUse the first-meeting agenda. Add one icebreaker, one activity and one next step. Proof: Submit a simple 20–30 minute agenda. Safety: Run it only with an approved adult present."
+  },
+  {
+    "id": "T15",
+    "title": "Find dance crew interest",
+    "crew": "Dance",
+    "minimumMinutes": 15,
+    "minutes": 30,
+    "purpose": "Find students who want to join a beginner-friendly crew.",
+    "missions": [
+      "get-battle-ready"
+    ],
+    "steps": [
+      "Tell interested students about H4.",
+      "Share the approved signup route.",
+      "Ask what they would like to practise."
+    ],
+    "resources": [
+      {
+        "label": "Signup QR code",
+        "url": "../resources/#signup-qr"
+      },
+      {
+        "label": "Dance crew instructions",
+        "url": "../guides/#build-a-school-dance-crew"
+      }
+    ],
+    "submit": "Report the number interested and suggested practice ideas.",
+    "approval": "No tryouts or exclusion; do not collect personal data.",
+    "assignment": "T15 — Find dance crew interest\nTell interested students about H4 and share the approved signup route. Ask about beginner-friendly practice ideas. Proof: Report the number interested and suggested practice ideas. Safety: No tryouts or exclusion; do not collect personal data."
+  },
+  {
+    "id": "T16",
+    "title": "Make a practice plan",
+    "crew": "Dance",
+    "minimumMinutes": 20,
+    "minutes": 30,
+    "purpose": "Plan a safe, beginner-friendly practice.",
+    "missions": [
+      "get-battle-ready"
+    ],
+    "steps": [
+      "Ask a teacher about space and supervision.",
+      "Write a warmup, beginner moves and a cooldown.",
+      "Send the plan for adult review."
+    ],
+    "resources": [
+      {
+        "label": "Dance crew instructions",
+        "url": "../guides/#build-a-school-dance-crew"
+      }
+    ],
+    "submit": "Send the plan for adult review.",
+    "approval": "No unsafe moves, unsupervised practice or unconfirmed bookings.",
+    "assignment": "T16 — Make a practice plan\nAsk your teacher about space and supervision. Draft a warmup, beginner moves and cooldown. Proof: Send the plan for adult review. Safety: No unsafe moves, unsupervised practice or unconfirmed bookings."
+  },
+  {
+    "id": "T17",
+    "title": "Teach one move on video",
+    "crew": "Dance / Media",
+    "minimumMinutes": 20,
+    "minutes": 30,
+    "purpose": "Show your team how to do one move you know.",
+    "missions": [
+      "get-battle-ready"
+    ],
+    "steps": [
+      "Pick a safe move you already know.",
+      "Film yourself slowly and at normal speed, or write the steps.",
+      "Share only through a private, approved route."
+    ],
+    "resources": [
+      {
+        "label": "Dance crew instructions",
+        "url": "../guides/#build-a-school-dance-crew"
+      },
+      {
+        "label": "Optional: a camera"
+      }
+    ],
+    "submit": "Send a private approved link or describe the steps if you cannot film.",
+    "approval": "No other people in frame without approval; no public posting.",
+    "assignment": "T17 — Teach one move on video\nChoose a safe move you know. Film yourself showing it slowly and at normal speed. Proof: Send a private approved link or describe the steps if you cannot film. Safety: No other people in frame without approval; no public posting."
+  },
+  {
+    "id": "T18",
+    "title": "Find a nearby school",
+    "crew": "Ops",
+    "minimumMinutes": 15,
+    "minutes": 30,
+    "purpose": "Find nearby schools that could be a fit for H4.",
+    "missions": [
+      "grow-the-movement"
+    ],
+    "steps": [
+      "Find up to three nearby schools.",
+      "Find each school office’s public contact page.",
+      "Send the links to the H4 director."
+    ],
+    "resources": [
+      {
+        "label": "Public school websites"
+      }
+    ],
+    "submit": "Send school names and public website links to the director.",
+    "approval": "Do not contact students at other schools without an approved route.",
+    "assignment": "T18 — Find a nearby school\nFind up to three nearby schools and their public office contact pages. Proof: Send school names and public website links to the director. Safety: Do not contact students at other schools without an approved route."
+  },
+  {
+    "id": "T19",
+    "title": "Find community spaces",
+    "crew": "Ops",
+    "minimumMinutes": 20,
+    "minutes": 30,
+    "purpose": "Find possible spaces for supervised youth activities.",
+    "missions": [
+      "grow-the-movement"
+    ],
+    "steps": [
+      "Look up to three community centres or libraries.",
+      "Save public links and one reason each space might fit."
+    ],
+    "resources": [
+      {
+        "label": "Public community centre or library websites"
+      }
+    ],
+    "submit": "Send names, public links and one reason each might fit.",
+    "approval": "Do not visit alone or contact staff on behalf of H4 without approval.",
+    "assignment": "T19 — Find community spaces\nFind up to three community centres or libraries with possible youth activity space. Proof: Send names, public links and one reason each might fit. Safety: Do not visit alone or contact staff on behalf of H4 without approval."
+  },
+  {
+    "id": "T20",
+    "title": "Draft an outreach message",
+    "crew": "Media / Ops",
+    "minimumMinutes": 15,
+    "minutes": 25,
+    "purpose": "Write a first outreach message for the director to review.",
+    "missions": [
+      "grow-the-movement"
+    ],
+    "steps": [
+      "Start with the community outreach template.",
+      "Explain what H4 does and why the space might fit.",
+      "Ask for a conversation and send the draft to the director."
+    ],
+    "resources": [
+      {
+        "label": "Outreach draft",
+        "url": "../resources/#community-outreach"
+      }
+    ],
+    "submit": "Send the draft to the director.",
+    "approval": "Do not send it yourself unless an adult approves the route and text.",
+    "assignment": "T20 — Draft an outreach message\nUse the outreach template. Explain H4, why the place might be a good fit and ask for a conversation. Proof: Send the draft to the director. Safety: Do not send it yourself unless an adult approves the route and text."
+  }
+]
